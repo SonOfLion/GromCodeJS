@@ -22,7 +22,7 @@ console.log('f: ', typeof false);
 console.log('g: ', typeof true);
 console.log('h: ', typeof null);
 console.log('i: ', typeof undefined);
-console.log('j: ', typeof Symbol);
+console.log('j: ', typeof Symbol());
 console.log('k: ', typeof { name: 'John' });
 console.log('l: ', typeof [1, 2, 3, 4]);
 console.log('m: ', typeof
