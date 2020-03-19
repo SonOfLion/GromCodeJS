@@ -26,10 +26,10 @@ console.log("'text' + null: ", 'text' + null);
 let num = 17;
 
 // Постфиксная и префиксная форма записи
-++19;
-console.log('++19:', ++19);
-19++;
-console.log('19++:', 19++);
+++num;
+console.log('++num:', ++num);
+num++;
+console.log('num++:', num++);
 
 
 
