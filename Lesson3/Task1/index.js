@@ -30,7 +30,7 @@ let num = 17;
 ++num;
 console.log('++num: ', ++num);
 num++;
-console.log('num: ', num++);
+console.log('num++: ', num++);
 
 
 
