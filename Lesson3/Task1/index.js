@@ -26,9 +26,9 @@ console.log("'text' + null: ", 'text' + null);
 let num = 17;
 
 // Постфиксная и префиксная форма записи
-const x = ++num;
+
 console.log('++num:', ++num);
-const y = num++;
+
 console.log('num++:', num++);
 
 
