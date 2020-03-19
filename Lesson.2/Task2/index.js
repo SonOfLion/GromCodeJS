@@ -1,4 +1,4 @@
-/*
+
 
 const userName = 'John';
 const greeting = "I'm John";
@@ -9,4 +9,3 @@ let pet_ = 'dog';
 let superNumber;
 superNumber = 17;
 
-*/
