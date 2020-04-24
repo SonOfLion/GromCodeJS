@@ -1,8 +1,7 @@
 let n = 199;
 let sum = 0;
 
-while (n > 0) {
+for (let i = 0; i <= n; i++) {
     sum += n;
-    n--;
 }
-console.log("Result:" + sum);
+console.log('Result: ' + sum);
