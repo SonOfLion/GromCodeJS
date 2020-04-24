@@ -5,3 +5,4 @@ for (let i = 0; i <= n; i++) {
     sum += n;
 }
 console.log('Result: ' + sum);
+console.log(sum);
