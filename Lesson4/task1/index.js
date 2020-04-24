@@ -4,5 +4,4 @@ let sum = 0;
 for (let i = 0; i <= n; i++) {
     sum += n;
 }
-console.log('Result: ' + sum);
-console.log(sum);
+console.log('Result:' + sum);
