@@ -3,3 +3,12 @@ for (let i = 1; i <= 5; i++) {
         console.log(i + ' x ' + j + ' = ' + i * j);
     }
 }
+
+
+let result = 0;
+
+while (true) {
+    const userInput = prompt('Enter you`re password');
+    result += Number(userInput);
+
+}
