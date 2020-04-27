@@ -1,5 +1,5 @@
-const m = 10;
-const n = 30;
+let m = 1;
+let n = 16;
 let result = 0;
 
 for (let i = m; i <= n; i++) {
