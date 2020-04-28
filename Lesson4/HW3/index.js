@@ -2,8 +2,8 @@ let sum = 0;
 
 for (let i = 0; i <= 1000; i++) {
     if (i % 2 !== 0) {
-        console.log('Found' + i);
-    } else if (sum * 5 <= 5000) {
+        console.log('Found');
+    } else if (sum * 5 < 5000) {
         console.log('Bigger');
     } else {
         console.log('Smaller');
