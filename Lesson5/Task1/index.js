@@ -1,8 +1,4 @@
-let a = 2;
-let b = 3;
-
 function sum(a, b) {
 
-    return sum;
+    return (a + b);
 }
-console.log(a + b);
