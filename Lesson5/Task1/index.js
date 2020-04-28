@@ -1,4 +1,8 @@
+let a = 2;
+let b = 3;
+
 function sum(a, b) {
-    console.log(2 + 3);
+
     return sum;
 }
+console.log(a + b);
