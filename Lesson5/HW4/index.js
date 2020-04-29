@@ -1,4 +1,4 @@
-function compareSum(a, b, c, d) {
+function compareSums(a, b, c, d) {
 
 }
 
