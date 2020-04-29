@@ -1,9 +1,7 @@
 function increaser(a, index) {
 
     if (a > index) {
-        a + index;
-    } else {
-        a = a;
+        a += index;
     }
     return a;
 }
