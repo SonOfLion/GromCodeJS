@@ -1,8 +1,7 @@
-function getSum(a, b) {
+function getSum(num1, num2) {
     let sum = 0;
-    sum = a + b;
 
-    for (let i = a; i <= b; i++) {
+    for (let i = num1; i <= num2; i++) {
         sum += i;
         if (sum % 2 === 0) {
             return sum;
