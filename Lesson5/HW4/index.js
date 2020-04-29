@@ -1,5 +1,5 @@
 function compareSum(a, b, c, d) {
-    function sum(compareSum) {
+    function sum(from, to) {
 
     }
 }
