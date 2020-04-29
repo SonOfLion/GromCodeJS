@@ -1,7 +1,7 @@
 function getPrimes(n) {
-    if (n / n && n % 2 === 1) {
-        return 'True';
-    } else {
-        return 'False';
+    for (let i = 2; i <= n; i++) {
+        if (i / i && i % 2 === 1) {
+            console.log(i);
+        }
     }
 }
