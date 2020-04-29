@@ -1,9 +1,9 @@
 function getPrimes(num) {
 
     for (let i = 2; i <= num; i++) {
-        if (i % 2 === 0) {
+        if (i > 2 && i % 2 === 0) {
 
-        } else if (i / num) {
+        } else {
             console.log(i);
         }
     }
