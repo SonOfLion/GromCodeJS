@@ -1,8 +1,10 @@
 function getPrimes(num) {
 
-    for (let i = 0; i <= num; i++) {
-        if (i > 1 / 1) {
-            console.log(num + i);
+    for (let i = 2; i <= num; i++) {
+        for (let j = 2; j < i; j++) {
+            if (i % j === 0) {
+                console.log(num + '');
+            }
         }
     }
 }
