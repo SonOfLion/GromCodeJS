@@ -4,4 +4,5 @@ function getSum(num, num) {
     if (sum % 2 === 0) {
         return sum;
     }
+    return sum;
 }
