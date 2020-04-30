@@ -1,9 +1,9 @@
 function compareSums(a, b, c, d) {
 
     if (sum1 > sum2) {
-        return true;
+        return 'true';
     } else {
-        return false;
+        return 'false';
     }
 
 }
