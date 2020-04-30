@@ -1,4 +1,4 @@
-function compareSums(a, b, c, d) {
+function compareSums([a, b], [c, d]) {
     let from = a + b;
     let to = c + d;
 
