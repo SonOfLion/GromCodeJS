@@ -1,6 +1,6 @@
 function compareSums(a, b, c, d) {
 
-    if (sum1 > sum2) {
+    if (from > to) {
         return 'true';
     } else {
         return 'false';
@@ -9,6 +9,6 @@ function compareSums(a, b, c, d) {
 }
 
 function sum(from, to) {
-    let sum1 = a + b;
-    let sum2 = c + d;
+    from = a + b;
+    to = c + d;
 }
