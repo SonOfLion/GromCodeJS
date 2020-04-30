@@ -1,4 +1,6 @@
 function compareSums(a, b, c, d) {
+    from = a + b;
+    to = c + d;
 
     if (from > to) {
         return 'true';
