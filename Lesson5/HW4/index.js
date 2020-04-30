@@ -11,6 +11,6 @@ function compareSums(a, b, c, d) {
 }
 
 function sum(from, to) {
-    let from = a + b;
-    let to = c + d;
+    from = a + b;
+    to = c + d;
 }
