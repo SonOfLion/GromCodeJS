@@ -6,5 +6,5 @@ function getSum(arr) {
     for (let i = 0; i < arr.length; i++) {
         sumOfArr += arr[i];
     }
-    return sumOfArr;
+    return getSum;
 }
