@@ -8,5 +8,5 @@ function getSum(arr) {
     for (let i = 0; i < arr.length; i++) {
         sumOfNumbers += arr[i];
     }
-    console.log(sumOfNumbers);
+    return (sumOfNumbers);
 }
