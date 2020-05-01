@@ -1,16 +1,18 @@
 function compareSums(a, b, c, d) {
-    let from = a + b;
-    let to = c + d;
 
-    if (from > to) {
-        return 'true';
+    function sum1()
+
+    return a + b;
+
+    function sum2()
+
+    return c + d;
+
+    if (sum1() > sum2()) {
+        return true;
     } else {
-        return 'false';
+        return false;
     }
-
 }
 
-function sum(from, to) {
-    from = a + b;
-    to = c + d;
-}
+compareSums(1, 2, 1, 1);
