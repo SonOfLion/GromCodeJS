@@ -9,3 +9,5 @@ function findDivCount(a, b, n) {
     }
     return sum;
 }
+
+findDivCount(2, 10, 15);
