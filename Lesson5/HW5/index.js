@@ -4,7 +4,7 @@ function findDivCount(a, b, n) {
     for (let i = a; i <= b; i++) {
         sum += i;
     }
-    if (sum % 2 === n) {
+    if (sum % 2 === 0 && sum === n) {
         return sum;
     } else {
         return 0;
