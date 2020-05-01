@@ -7,8 +7,8 @@ function findDivCount(a, b, n) {
         } else if (sum === 0) {
             return 0;
         }
-        return sum;
     }
+    return sum;
 }
 
 findDivCount(1, 2, 3);
