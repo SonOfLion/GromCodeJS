@@ -3,7 +3,7 @@ function findDivCount(a, b, n) {
 
     for (let i = a; i <= b; i++) {}
     if (i % n === 0) {
-        sum += i;
+        sum++;
     } else if (sum === 0) {
         return 0;
     }
