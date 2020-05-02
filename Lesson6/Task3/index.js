@@ -8,6 +8,3 @@ function getSpecialNumbers(m, n) {
     }
     return specialNumbers;
 }
-
-const specialNumbers = getSpecialNumbers(10, 30);
-console.log(specialNumbers);
