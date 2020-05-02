@@ -1,4 +1,5 @@
 function getSum(arr) {
+
     let sumOfArr = 0;
 
     if (!Array.isArray(arr)) {
