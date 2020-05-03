@@ -3,5 +3,11 @@ function reverseArray(arr) {
         return null;
     }
 
-    return arr.reverse();
+    let reverseArr = [];
+
+    for (let i = arr.length; i >= 0; i--) {
+        reverseArr.push(arr[i]);
+    }
+
+    return reverseArr;
 }
