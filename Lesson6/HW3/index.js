@@ -9,5 +9,6 @@ function checkSum(arr) {
         sum += arr[i];
     }
 
-    return sum(arr) > 100;
+    return (sum > 100);
 }
+console.log(checkSum([5, 10, 20, 30, 60]));
