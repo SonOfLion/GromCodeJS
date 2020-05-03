@@ -1,5 +1,9 @@
-function swap(arr) {
-    let [first, last] = arr;
+let numbers = [10, 15, 20, 25];
 
-    return [last, first];
+function swap(arr) {
+    let [first, midle, last] = arr;
+
+    return [last, midle, first];
 }
+
+console.log(swap(numbers));
