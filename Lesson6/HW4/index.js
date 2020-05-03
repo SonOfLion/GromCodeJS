@@ -1,4 +1,4 @@
-function increaseEventEl(arr, delta) {
+function increaseEvenEl(arr, delta) {
     if (!Array.isArray(arr)) {
         return null;
     }
