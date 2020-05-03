@@ -1,5 +1,13 @@
-function swap(arr) {
-    let [first, last] = arr;
+const numbers = [11, 22, 33, 55, 66];
 
-    return [last, first];
+// const a = numbers[0];
+// const b = numbers[1];
+
+// const [a, b] = numbers;
+
+function swap(arr) {
+    let [start, ...rest] = arr;
+
+    return [...rest, start];
 }
+console.log(swap(numbers));
