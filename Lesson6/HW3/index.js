@@ -8,10 +8,6 @@ function checkSum(arr) {
     for (let i = 0; i < arr.length; i++) {
         sum += arr[i];
     }
-    if (sum < 100) {
-        return true;
-    } else {
-        return false;
-    }
+
 
 }
