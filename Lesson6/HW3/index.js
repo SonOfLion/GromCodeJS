@@ -9,5 +9,5 @@ function checkSum(arr) {
         sum += arr[i];
     }
 
-
+    return sum(arr) > 100;
 }
