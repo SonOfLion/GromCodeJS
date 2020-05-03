@@ -9,5 +9,5 @@ function reverseArray(arr) {
         reverseArr.push(arr[i]);
     }
 
-    return arr;
+    return reverseArr;
 }
