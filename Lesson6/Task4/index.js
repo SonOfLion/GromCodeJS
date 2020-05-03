@@ -1,4 +1,4 @@
-let numbers = [10, 15, 20];
+let numbersOfArr = [10, 15, 20];
 
 function swap(arr) {
     let [first, last] = arr;
