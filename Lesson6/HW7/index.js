@@ -20,10 +20,12 @@ function checker(arr) {
     }
 
     sumOfMinMaxArr = minElOfArray + maxElOfArray;
-    if (sum > 1000) {
+    if (sumOfMinMaxArr > 1000) {
         return true;
     } else {
         return false;
     }
 
 }
+
+console.log(checker([2, 3, 6, 7, 8, 9]));
