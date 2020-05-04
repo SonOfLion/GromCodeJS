@@ -3,9 +3,9 @@ function cloneArr(arr) {
         return null;
     }
 
-    let [...rest] = arr;
+    let [...cloneArray] = arr;
 
-    return rest;
+    return cloneArray;
 }
 
 console.log(cloneArr([1, 2, 3]));
