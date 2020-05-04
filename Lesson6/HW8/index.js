@@ -3,13 +3,18 @@ function sortAsc(array) {
         return null;
     }
 
-    for (var i = 0, endI = array.length - 1; i < endI; i++) {
-        for (var j = 0, endJ = endI - i; j < endJ; j++) {
+    for (var i = array.length - 1; i > 0; i--) {
+        let count = 0;
+        for (var j = 0; j < i; j++) {
             if (array[j] > array[j + 1]) {
                 var swap = array[j];
                 array[j] = array[j + 1];
                 array[j + 1] = swap;
+                count++;
             }
+        }
+        if (count === 0) {
+            break;
         }
     }
     return array;
@@ -21,4 +26,8 @@ function sortDesc(array) {
     if (!Array.isArray(array)) {
         return null;
     }
+
+
 }
+
+console.log(sortDesc([3, 2, 6, 9]));
