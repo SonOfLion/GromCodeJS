@@ -5,8 +5,10 @@ function reverseArray(arr) {
 
     let reverseArr = [];
 
-    for (let i = 0; i <= arr.length; i++) {
+    for (let i = 1; i <= arr.length; i++) {
         reverseArr.push(arr[arr.length - i]);
     }
     return reverseArr;
 }
+
+console.log(reverseArray([1, 2, 3]));
