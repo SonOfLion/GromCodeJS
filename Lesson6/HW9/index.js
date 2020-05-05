@@ -5,7 +5,7 @@ function withdraw(clients, balances, client, amount) {
     let indexOfArray = 0;
     for (let i = 0; i < clients.lenght; i++) {
         if (clients[i] === client) {
-            return indexOfArray[i];
+            indexOfArray[i];
         }
     }
 
@@ -14,5 +14,5 @@ function withdraw(clients, balances, client, amount) {
     } else {
         return -1;
     }
-
 }
+console.log(withdraw(['Ann', 'John', 'User'], [1400, 87, -6]));
