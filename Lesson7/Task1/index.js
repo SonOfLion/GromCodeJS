@@ -3,7 +3,7 @@ const getSpecialNumbers = numbers => {
 
     for (let i = 0; i < numbers; i++) {
         if (numbers[i] % 3 === 0) {
-            specialNumbers.push();
+            specialNumbers.push(numbers[i]);
         }
     }
     return specialNumbers;
