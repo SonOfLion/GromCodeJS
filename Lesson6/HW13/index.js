@@ -14,4 +14,4 @@ function uniqueCount(arr) {
     return arr.length;
 }
 
-console.log(uniqueCount([4, 4, 2, 2, 3]));
+console.log(uniqueCount([1, 4, 1, 8, 3, 4, 8, 8]));
