@@ -15,4 +15,3 @@ function withdraw(clients, balances, client, amount) {
         return -1;
     }
 }
-console.log(withdraw(['Ann', 'John', 'User'], [1400, 87, -6]));
