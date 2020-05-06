@@ -1,8 +1,8 @@
 function arrAverage(arr) {
     if (!Array.isArray(arr)) return null;
 
-    return arr.reduce((accumulator, element) => accumulator + element / element)
+    return arr.reduce((accumulator, element) => accumulator + element) / arr.length;
 }
 
-let numbers = [4, 6];
+let numbers = [2, 5, 6, 3];
 console.log(arrAverage(numbers));
