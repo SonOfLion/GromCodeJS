@@ -1,4 +1,4 @@
-function filterName(arr, text) {
+function filterNames(arr, text) {
 
     arr.filter((arrayOfLines) => {
         if (arrayOfLines.includes(text) && arrayOfLines.length > 5);
