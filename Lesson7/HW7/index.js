@@ -1,6 +1,5 @@
 let filterNames = (arr, text) => arr.filter((array) => {
-    if (array.includes(text) && array.length > 5);
-    return true;
+    if (array.includes(text) && array.length > 5) return true;
 });
 
 
