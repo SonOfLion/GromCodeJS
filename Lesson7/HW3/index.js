@@ -1,4 +1,4 @@
-function increaseEventEl(num, delta) {
+function increaseEvenEl(num, delta) {
     if (!Array.isArray(num)) return null;
 
     return num.map(num => {
@@ -9,4 +9,4 @@ function increaseEventEl(num, delta) {
 }
 
 let numbers = (([2, 5, 6, 8, 11, 9, 4], 20));
-console.log(increaseEventEl(numbers));
+console.log(increaseEvenEl(numbers));
