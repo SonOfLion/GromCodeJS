@@ -7,4 +7,4 @@ function filterNames(arr, text) {
 }
 
 let namesOfPeople = ['John', 'Olivia', 'Oleksandr', 'Emanuel', 'Vanya', 'Nystya', 'ya'];
-console.log(filterName(namesOfPeople));
+console.log(filterNames(namesOfPeople));
