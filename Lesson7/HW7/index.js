@@ -1,7 +1,7 @@
 function filterNames(arr, text) {
 
-    arr.filter((arrayOfLines) => {
-        if (arrayOfLines.includes(text) && arrayOfLines.length >= 5);
+    arr.filter((array) => {
+        if (array.includes(text) && array.length >= 5);
         return true;
     });
 }
