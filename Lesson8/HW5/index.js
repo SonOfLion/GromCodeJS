@@ -6,21 +6,21 @@ function addPropertyV1(obj, key, value) {
 
 function addPropertyV2(obj, key, value) {
     let idUser = {
-        key: [value]
+        [key]: value
     };
     return Object.assign(obj, idUser);
 }
 
 function addPropertyV3(obj, key, value) {
     let idUser = {
-        key: [value]
+        [key]: value
     };
     return Object.assign({}, obj, idUser);
 }
 
 function addPropertyV4(obj, key, value) {
     let idUser = {
-        key: [value]
+        [key]: value
     };
     return Object.assign({...obj }, idUser);
 }
