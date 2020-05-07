@@ -4,7 +4,7 @@ const user = {
 };
 
 const concatProps = obj => {
-    let arr = [];
+    const arr = [];
 
     for (let key in obj) {
         arr.push(obj[key]);
