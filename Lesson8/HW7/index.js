@@ -7,9 +7,10 @@ function compareObjects(obj1, obj2) {
 
     if (arr1.length !== arr2.length) {
         return false;
-    } else {
-        return true;
     }
+
+    return arr1.reduce((acc, keys) =>
+        obj1[keys] === obj2[keys], true);
 }
 
 console.log(compareObjects(obj1, obj2));
