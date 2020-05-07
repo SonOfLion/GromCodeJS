@@ -9,3 +9,9 @@ function addPropertyV2(userData, userId) {
 
     return Object.assign({}, userData, idUser);
 }
+
+function addPropertyV3(userData, userId) {
+    let idUser = { id: userId };
+
+    return Object.assign(userData, idUser);
+}
