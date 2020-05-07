@@ -5,9 +5,8 @@ function compareObjects(obj1, obj2) {
     let arr1 = Object.keys(obj1);
     let arr2 = Object.keys(obj2);
 
-    if (arr1.length !== arr2.length) {
-        return false;
-    }
+    if (arr1.length !== arr2.length) return false;
+
 
     return arr1.reduce((acc, keys) =>
         obj1[keys] === obj2[keys], true);
