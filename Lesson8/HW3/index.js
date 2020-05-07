@@ -1,3 +1,3 @@
 const getKeys = obj => {
-    return keys(obj).forEach(elem => console.log(elem));
+    return Object.keys(obj).forEach(elem => console.log(elem));
 }
