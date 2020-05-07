@@ -1,5 +1,5 @@
 function addPropertyV1(userData, userId) {
-    userData.id = userId;
+    userData = userId;
 
     return userData;
 }
