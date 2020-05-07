@@ -1,5 +1,5 @@
 const addPropertyV1 = (userData, userId) => {
-    userData.Id = userId;
+    userData.id = userId;
 
     return userData;
 }
