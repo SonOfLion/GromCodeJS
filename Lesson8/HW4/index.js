@@ -6,14 +6,14 @@ function addPropertyV1(userData, userId) {
 
 
 function addPropertyV2(userData, userId) {
-    let idUser = { id: userId };
+    let id = { id: userId };
 
-    return Object.assign(userData, idUser);
+    return Object.assign(userData, id);
 }
 
 
 function addPropertyV3(userData, userId) {
-    let idUser = { id: userId };
+    let id = { id: userId };
 
-    return Object.assign({}, userData, idUser);
+    return Object.assign({}, userData, id);
 }
