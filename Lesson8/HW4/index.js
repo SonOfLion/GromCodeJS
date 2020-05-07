@@ -3,8 +3,3 @@ const addPropertyV1 = (userData, userId) => {
 
     return userData;
 }
-
-const addPropertyV2 = (userData, userId => {
-
-    return
-})
