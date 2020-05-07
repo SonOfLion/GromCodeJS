@@ -21,4 +21,4 @@ console.log(transaction.agent['company']);
 /* выведите в консоль значение свойства 'country' используя точку */
 console.log(transaction.agent['country']);
 /* выведите в консоль значение свойства 'operation time' используя квадратные скобки */
-console.log(transaction.agent['operation time']);
+console.log(transaction['operation time']);
