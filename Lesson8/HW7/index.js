@@ -2,10 +2,10 @@ let obj1 = { name: 'Tom', age: 17, student: false };
 let obj2 = { name: 'Thomas', age: 17 };
 
 function compareObjects(obj1, obj2) {
-
-    return obj1.length !== obj2.length;
-
-
+    if (obj1.length !== obj2.length)
+        return;
+    else if (obj1.length === obj2.length)
+        return true;
 }
 
 console.log(compareObjects(obj1, obj2));
