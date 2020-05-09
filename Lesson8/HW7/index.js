@@ -4,7 +4,7 @@ let obj2 = { name: 'Thomas', age: 17 };
 function compareObjects(obj1, obj2) {
     if (obj1.length !== obj2.length)
         return false;
-    else if (obj1.is === obj2.is)
+    else if (obj1.keys === obj2.keys)
         return true;
 }
 
