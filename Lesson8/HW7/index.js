@@ -1,10 +1,10 @@
 let obj1 = { name: 'Tom', age: 17 };
-let obj2 = { name: 'Tom', age: 177 };
+let obj2 = { name: 'Tom', age: 17 };
 //Сравнить два обьекта.
 //Метод length подходит только для ключей, ибо можно измерить длину ключа;
 //Нужно перебрать значения обьектов циклом.
 function compareObjects(obj1, obj2) {
-    if (obj1.length !== obj2.length) return false;
+    if (obj1.length !== obj2.length);
 }
 
 console.log(compareObjects(obj1, obj2));
