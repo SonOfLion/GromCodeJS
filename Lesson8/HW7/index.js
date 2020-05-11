@@ -10,7 +10,7 @@ function compareObjects(obj1, obj2) {
     if (firstObj.length !== secondObj.length) return false;
 
     for (let i of firstObj) {
-        return (obj1[i] === obj2[i]);
+        return (obj1[i] !== obj2[i]) ? false : true;
     }
 }
 
