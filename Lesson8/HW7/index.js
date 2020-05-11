@@ -1,14 +1,16 @@
-let obj1 = { name: 'Tom', age: 19 };
-let obj2 = { name: 'Tom', age: 17 };
+let obj1 = { name: 'Tom', age: 17 };
+let obj2 = { name: 'Tomas', age: 39 };
 //Сравнить два обьекта.
 //Метод length не подходит, ибо значение меняется а результат выдает true;
 function compareObjects(obj1, obj2) {
-    if (Object.keys(obj1).length === Object.keys(obj2).length) {
-        return true;
-    } else(obj1.length !== obj2.length);
+    let firstObj = Object.keys(obj1);
+    let secondObj = Object.keys(obj2);
 
+    if (firstObj.length !== secondObj.length) return true;
 
-
+    for (let i of firstObj) {
+        return (obj1[i] === obj2[i]);
+    }
 }
 
 console.log(compareObjects(obj1, obj2));
