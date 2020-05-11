@@ -11,6 +11,7 @@ function compareObjects(obj1, obj2) {
         if (obj1[key] !== obj2[key]) return false;
     }
     if (obj1.length === obj2.length) return true;
+    return false;
 }
 
 console.log(compareObjects(obj1, obj2));
