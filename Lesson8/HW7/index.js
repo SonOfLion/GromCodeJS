@@ -5,14 +5,17 @@ let obj4 = { name: 'Tom', age: 17 };
 //Сравнить два обьекта.
 //Метод length подходит только для ключей, ибо можно измерить длину ключа;
 //Нужно перебрать значения обьектов циклом.
-function compareObjects(obj1, obj2) {
+function compareObjects(obj1, obj2, obj3, obj4) {
 
     for (let key in obj1) {
         if (obj1[key] !== obj2[key]) return false;
-        return true;
     }
     if (obj1.length === obj2.length) return true;
-    return false;
+
+    for (let key in obj3) {
+        if (obj3[key] !== obj4[key]) return false;
+    }
+    if (obj3.length === obj4.length) return true;
 }
 
-console.log(compareObjects(obj1, obj2));
+console.log(compareObjects(obj1, obj2, obj3, obj4));
