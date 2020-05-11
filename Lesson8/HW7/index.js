@@ -7,7 +7,7 @@ function compareObjects(obj1, obj2) {
     let firstObj = Object.keys(obj1);
     let secondObj = Object.keys(obj2);
 
-    if (firstObj.length !== secondObj.length) return true;
+    if (firstObj.length !== secondObj.length) return false;
 
     for (let i of firstObj) {
         return (obj1[i] === obj2[i]);
