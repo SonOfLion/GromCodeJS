@@ -5,9 +5,9 @@ let obj2 = { name: 'Tom', age: 17 };
 function compareObjects(obj1, obj2) {
     if (Object.keys(obj1).length === Object.keys(obj2).length) {
         return true;
-    } else(obj1.length !== obj2.length); {
-        return false;
-    }
+    } else(obj1.length !== obj2.length);
+
+
 
 }
 
