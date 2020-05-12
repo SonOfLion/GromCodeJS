@@ -6,7 +6,7 @@ function getAdults(user) {
 
     for (let keys in user)
         if (user[keys] >= 18) {
-            emptyArr[keys] === user[keys];
+            emptyArr[keys] = user[keys];
         }
     return emptyArr;
 }
