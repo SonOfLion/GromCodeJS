@@ -1,0 +1,3 @@
+function pickProps(obj, listWords) {
+
+}
