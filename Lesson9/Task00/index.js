@@ -8,9 +8,9 @@ function pickProps(obj, arr) {
     let emptyObj = {};
 
     for (let keys in obj) {
-        for (let el in arr) {
+        for (let el of arr) {
             if (keys === el) {
-                emptyObj[keys] = obj[keys];
+                emptyObj[keys] = obj[keys]
             }
         }
     }
@@ -19,4 +19,6 @@ function pickProps(obj, arr) {
 
 let checkObj = { a: 1, b: 2, c: 3 };
 let checkArr = ['a', 'c'];
-console.log(pickProps(checkObj, checkArr));
+let result = pickProps(checkObj, checkArr);
+
+console.log(result);
