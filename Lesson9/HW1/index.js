@@ -12,8 +12,10 @@ const customers = {
         age: 17,
     }
 };
-const getCustomersList = users => Object.entries(users)
-    .map(([customer, id]) => ({...customer }, id))
-    .sort((a, b) => a.age - b.age);
 
+function getCustomersList(users) {
+    return Object.entries(users)
+        .map(([customer, id]) => ([...customer], id))
+        .sort((a, b) => a.age - b.age);
+}
 console.table(getCustomersList(customers));
