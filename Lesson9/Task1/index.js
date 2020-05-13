@@ -18,6 +18,6 @@ const users = {
 };
 
 const getAdults = usersObj => Object.entries(usersObj) //Масси массивов
-    .filter(users => users[1] >= 18).map(users => users[0]); //Фильтп для массива//и создать массив чтобы вывести всех пользователей.
+    .filter(users => users[1] >= 18).map(users => users[0]); //Фильтр для массива//и создать массив чтобы вывести всех пользователей.
 //Или же заюзать Object.values(usersObj); результат будет тот же.
 console.table(getAdults(users));
