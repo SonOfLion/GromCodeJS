@@ -19,7 +19,7 @@ function getNaN(arr) {
 console.log(getNaN(numbers));
 
 function getNaNV2(arr) {
-    return arr.filter((num) => isNaN(arr));
+    return arr.filter((num) => isNaN(num));
 }
 
 console.log(getNaNV2(numbers));
