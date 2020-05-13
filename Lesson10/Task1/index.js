@@ -12,17 +12,17 @@ function getFiniteNumbersV2(arr) {
 
 console.log(getFiniteNumbersV2(numbers));
 
-function getNan(arr) {
+function getNaN(arr) {
     return arr.filter((num) => Number.isNaN(num));
 }
 
-console.log(getNan(numbers));
+console.log(getNaN(numbers));
 
-function getNanV2(arr) {
+function getNaNV2(arr) {
     return arr.filter((num) => isNaN(arr));
 }
 
-console.log(getNanV2(numbers));
+console.log(getNaNV2(numbers));
 
 function getIntegers(arr) {
     return arr.filter((num) => Number.isInteger(num));
