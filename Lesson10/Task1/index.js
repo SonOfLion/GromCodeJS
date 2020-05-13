@@ -1,16 +1,16 @@
 const numbers = [15, 9.2, null, undefined, '19', Infinity, 12319203.13123];
 
-function getFiniteNumber(arr) {
+function getFiniteNumbers(arr) {
     return arr.filter((num) => Number.isFinite(num));
 }
 
-console.log(getFiniteNumber(numbers));
+console.log(getFiniteNumbers(numbers));
 
-function getFiniteNumberV2(arr) {
+function getFiniteNumbersV2(arr) {
     return arr.filter((num) => isFinite(num));
 }
 
-console.log(getFiniteNumberV2(numbers));
+console.log(getFiniteNumbersV2(numbers));
 
 function getNan(arr) {
     return arr.filter((num) => Number.isNaN(num));
