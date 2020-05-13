@@ -20,7 +20,7 @@ const users = {
 const getAdults = usersObj => {
     const usersArray = Object.entries(usersObj);
     const filteredUsersArray = usersArray
-        .filter(users => users[1] > 18);
+        .filter(users => users[1] >= 18);
 
     const usersName = filteredUsersArray
         .map(users => users[0]);
