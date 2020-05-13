@@ -27,3 +27,5 @@ const getAdults = usersObj => {
 
     return usersName;
 }
+
+console.table(getAdults(users));
