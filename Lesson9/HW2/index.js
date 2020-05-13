@@ -21,8 +21,8 @@ let rooms = {
 //Вернуть список жильцов в виде массива.Метод map();
 //Вернуть плоским массивом??
 const getPeople = obj => Object.values(obj) //1!
-
-.map((room) => room.name); //2!
+    .flat(obj)
+    .map((room) => room.name); //2!
 
 
 console.table(getPeople(rooms));
