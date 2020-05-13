@@ -19,9 +19,9 @@ let rooms = {
 
 //Нужно вернуть значения Object.values();
 //Вернуть список жильцов в виде массива.Метод map();
-//Вернуть плоским массивом??
+//Вернуть плоским массивом.
 const getPeople = obj => Object.values(obj) //1!
-    .flat(obj)
+    .flat() //3!
     .map((room) => room.name); //2!
 
 
