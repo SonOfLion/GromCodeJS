@@ -1,5 +1,6 @@
 //Создать массив массивов.use Object.entries();
-//Вернуть массив пользоватлей с сортировкой по возрасту по возрастанаю.map(),sort();
+//Вернуть массив пользоватлей.map();
+//Для сортировки по возрастанию изать  метод sort((a,b), a - b);
 
 const customers = {
     'customer-id-1': {
@@ -11,5 +12,8 @@ const customers = {
         age: 17,
     }
 };
+const getCustomersList = users => Object.entries(users)
+    .map(([customers, id]) => ({...customers }, id))
+    .sort((a, b), a.age - b.age);
 
-function getCustomersList(users)
+console.log(getCustomersList(customers));
