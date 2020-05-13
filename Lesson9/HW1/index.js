@@ -1,6 +1,7 @@
-//Создать массив массивов.use Object.entries();
-//Вернуть массив пользоватлей.map();
-//Для сортировки по возрастанию изать  метод sort((a,b) => a - b);
+//1.Создать массив массивов.use Object.entries();
+//2.Вернуть массив пользоватлей.map();
+//2!.Вернуть всех пользователей с id. 
+//3Для сортировки по возрастанию юзать  метод sort((a,b) => a - b);
 
 const customers = {
     'customer-id-1': {
@@ -12,10 +13,9 @@ const customers = {
         age: 17,
     }
 };
+const getCustomersList = users =>
+    Object.entries(users) //1,2.Массив массивов.
+    .map(([id, num]) => ({ id, ...num })) //Вернуть id пользователей!
+    .sort((a, b) => a.age - b.age) //Отсортировать по возрастанию пользователей.
 
-function getCustomersList(users) {
-    return Object.entries(users)
-        .map(([customer, id]) => ([...customer], id))
-        .sort((a, b) => a.age - b.age);
-}
 console.table(getCustomersList(customers));
