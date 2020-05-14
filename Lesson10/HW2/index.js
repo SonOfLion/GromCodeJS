@@ -1,5 +1,5 @@
 //input:length, float,float;
-//output: arr,length, float,float;
+//output: arr,length, int,int;
 //Eсли в промежутке нет целых чисел вернуть null.
 //Нужно вернуть массив целых чисел причем правильной длины.
 //Создать пустой массив, создать цикл.
@@ -19,4 +19,4 @@ function getRandomNumbers(len, start, end) {
     };
     return emptyArr;
 }
-console.log(getRandomNumbers([12, 3, 4]));
+console.log(getRandomNumbers([12, 5, 3, 4]));
