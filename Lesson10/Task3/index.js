@@ -1,8 +1,6 @@
-const multiRound = (num) => [Math.round(num * 100) / 100,
-    Math.floor(num * 100) / 100,
-    Math.ceil(num * 100) / 100,
-    Math.trunc(num * 100) / 100,
+const multiRound = (num) => [Math.round(num),
+    Math.floor(num),
+    Math.ceil(num),
+    Math.trunc(num),
     num.toFixed(2),
 ];
-
-console.log(multiRound(num));
