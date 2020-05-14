@@ -15,8 +15,10 @@ function getRandomNumbers(len, start, end) {
     let emptyArr = []; //Пустой массив
 
     for (let i = 0; i < len; i++) { //Цикл
-        emptyArr[i] = Math.floor()
+        emptyArr[i] = Math.floor(Math.random * (Math.ceil.start - Math.floor.end));
     };
 
     return emptyArr;
 }
+
+console.log(getRandomNumbers([12, 3, 4]));
