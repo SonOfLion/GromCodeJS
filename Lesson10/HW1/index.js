@@ -9,9 +9,9 @@ let freeNumbers = [13.233, 17.234];
 
 const getTotalPrice = (arr) => {
     let sum = arr.reduce((count, num) => count + num);
-    let roundUp = Math.floor(sum * 100) / 100;
+    let roundUp = Math.ceil(sum * 100) / 100;
 
-    return roundUp;
+    return '$' + roundUp;
 }
 
 console.table(getTotalPrice(freeNumbers));
