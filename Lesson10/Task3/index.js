@@ -1,4 +1,4 @@
-let number = 12.123673;
+let number = [12.123673, -12, 23];
 
 const multiRound = num => [Math.floor(num * 100) / 100,
     Math.round(num * 100) / 100,
