@@ -1,4 +1,4 @@
-let number = 12.23451
+let number = 0.12;
 
 const multiRound = num => [
     Math.floor(num * 100) / 100,
