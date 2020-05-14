@@ -19,4 +19,4 @@ function getRandomNumbers(len, start, end) {
     };
     return emptyArr;
 }
-console.log(getRandomNumbers([12, 5, 3, 4]));
+console.log(getRandomNumbers(12, 5, 3, 4));
