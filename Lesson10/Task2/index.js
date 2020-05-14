@@ -3,7 +3,7 @@ let numbers = [1, 2, 3, 41.23, 123, null, undefined, Infinity, 'text']
 function getParsedIntegers(arr) {
     return arr.map((num) => Number.parseInt(num));
 }
-console.log(getParsedIntegersV2(numbers));
+console.log(getParsedIntegers(numbers));
 
 function getParsedIntegersV2(arr) {
     return arr.map((num) => parseInt(num));
