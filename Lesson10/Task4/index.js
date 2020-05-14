@@ -1,5 +1,5 @@
 const getMaxAbsoluteNumber = arr => {
-    if (!Array.isArray(array)) return null;
+    if (!Array.isArray(arr)) return null;
 
     const absoluteValues = arr
         .map(num => Math.abs(num));
