@@ -1,4 +1,4 @@
-let number = [12.13123, 12313, -123, null, undefined];
+let number = [12.13123, 12313, -123];
 
 const multiRound = (num) => [Math.round(num),
     Math.floor(num),
