@@ -6,4 +6,4 @@ const multiRound = num => [
     Math.trunc(num * 10) / 100, +Math.PI.toFixed(2),
 ];
 
-console.log(multiRound(Math.PI.toFixed(2)));
+console.log(multiRound(number));
