@@ -1,6 +1,6 @@
 //input:arr, logicFalse/True;
 //ouput:arr, if True a === b, else false b === a;
-//Если True вернуть массив по возрастанию , False Вернуть по убыванию массив.
+//Если True вернуть массив по возрастанию , False Вернуть по убыванию массив.(переменную можно не юзать!!!!).
 function sortContacts(arr, logicTrue = true) {
     if (!Array.isArray(arr)) return null;
 
