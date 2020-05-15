@@ -1,20 +1,13 @@
 //input:arr, logicFalse/True;
 //ouput:arr, if True a === b, else false b === a;
-
+//Если True вернуть массив по возрастанию , False Вернуть по убыванию массив.
 function sortContacts(arr, logicTrue = true) {
     if (!Array.isArray(arr)) return null;
 
-    if (!logicTrue) {
-        sort((a, b) => {
-            return b.name.localeCompare(a.name);
-        });
-    }
+    if (logicTrue === false)
+        return arr.sort((a, b) => b.name.localeCompare(a.name));
 
-    let result = arr.sort((a, b) => {
-        return a.name.localeCompare(b.name);
-    });
-
-    return result;
+    return arr.sort((a, b) => a.name.localeCompare(b.name));
 }
 
 const contacts = [{
