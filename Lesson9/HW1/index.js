@@ -15,7 +15,7 @@ const customers = {
 };
 const getCustomersList = users =>
     Object.entries(users) //1,2.Массив массивов.
-    .map(([id, num]) => ({ id, ...num })) //Вернуть id пользователей!
+    .map(([id]) => ({ id })) //Вернуть id пользователей!
     .sort((a, b) => a.age - b.age) //Отсортировать по возрастанию пользователей.
 
 console.table(getCustomersList(customers));
