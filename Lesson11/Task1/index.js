@@ -14,7 +14,7 @@
 //input:text, len;
 //output:text,len=10,null;
 const splitText = (text, len = 10) => {
-    if (typeof text === 0) return null;
+    if (typeof text.length === 0) return null;
 
     const strArr = [];
     let startPosition = 0;
