@@ -5,5 +5,9 @@
 const countOccurrences = (str, substr) => {
     if (substr === '') return null;
 
-    return substr.includes(str);
+    return str.split(substr).length;
 }
+
+
+let name = 'JavaScript';
+console.log(countOccurrences(name));
