@@ -5,16 +5,16 @@ const calc = expression => {
 
     switch (a[1]) {
         case '+':
-            return +a[0] + +a[2];
+            return Number(a) + Number(b);
             break;
         case '-':
-            return a[0] - a[2];
+            return Number(a) - Number(b);
             break;
         case '*':
-            return a[0] - a[2];
+            return Number(a) * Number(b);
             break;
         case '/':
-            return a[0] - a[2];
+            return Number(a) / Number(b);
             break;
     }
     return expression + ' = ' + result;
