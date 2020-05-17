@@ -1,9 +1,9 @@
 //input:str;
 //output:Number(str);
 const calc = expression => {
-    const a = expression.split(' ');
+    const [a, operator, b] = expression.split(' ');
 
-    switch (a[1]) {
+    switch (operator) {
         case '+':
             return Number(a) + Number(b);
             break;
@@ -17,7 +17,7 @@ const calc = expression => {
             return Number(a) / Number(b);
             break;
     }
-    return expression + ' = ' + result;
+    return `${expression}  =  + ${result}`;
 }
 
 console.log(calc('2 + 2'));
