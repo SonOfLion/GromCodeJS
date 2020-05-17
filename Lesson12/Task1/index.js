@@ -21,5 +21,3 @@ const calc = expression => {
     }
     return `${expression}  =  ${result}`;
 }
-
-console.log(calc('2 * 2'));
