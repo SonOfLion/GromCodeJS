@@ -1,5 +1,6 @@
 //input:str;
 //output:Number(str);
+
 const calc = expression => {
     const [a, operator, b] = expression.split(' ');
     let result;
@@ -9,13 +10,13 @@ const calc = expression => {
             return Number(a) + Number(b);
             break;
         case '-':
-            return Number(a) - Number(b);
+            return a - b;
             break;
         case '*':
-            return Number(a) * Number(b);
+            return a * b;
             break;
         case '/':
-            return Number(a) / Number(b);
+            return a / b;
             break;
     }
     return `${expression}  =  ${result}`;
