@@ -1,25 +1,24 @@
 //input:str;
 //output:Number(str);
-
 const calc = expression => {
-    const [a, operator, b] = expression.split(' ');
+    const [a, operator, b] = expression.split(" ");
     let result;
 
     switch (operator) {
-        case '+':
+        case "+":
             result = Number(a) + Number(b);
             break;
-        case '-':
+        case "-":
             result = a - b;
             break;
-        case '*':
-            result = a * b;
-            break;
-        case '/':
+        case "/":
             result = a / b;
             break;
+        case "*":
+            result = a * b;
+            break;
     }
-    return `${expression}  =  ${result}`;
+    return `${expression} = ${result}`;
 }
 
 console.log(calc('10 + 2'));
