@@ -21,3 +21,5 @@ const calc = expression => {
     }
     return `${expression}  =  ${result}`;
 }
+
+console.log(calc('10 + 2'));
