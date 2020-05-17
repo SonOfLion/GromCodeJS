@@ -7,16 +7,16 @@ const calc = expression => {
 
     switch (operator) {
         case '+':
-            return Number(a) + Number(b);
+            result = Number(a) + Number(b);
             break;
         case '-':
-            return a - b;
+            rresult = a - b;
             break;
         case '*':
-            return a * b;
+            result = a * b;
             break;
         case '/':
-            return a / b;
+            result = a / b;
             break;
     }
     return `${expression}  =  ${result}`;
