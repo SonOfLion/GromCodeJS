@@ -2,6 +2,7 @@
 //output:Number(str);
 const calc = expression => {
     const [a, operator, b] = expression.split(' ');
+    let result;
 
     switch (operator) {
         case '+':
