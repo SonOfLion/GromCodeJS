@@ -10,7 +10,7 @@ const calc = expression => {
             result = Number(a) + Number(b);
             break;
         case '-':
-            rresult = a - b;
+            result = a - b;
             break;
         case '*':
             result = a * b;
