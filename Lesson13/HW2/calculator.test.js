@@ -1,5 +1,11 @@
 import { calc } from './calculator.js';
 
+it('should return null if argument is not string', () => {
+    let result = calc(10 - 1);
+
+    expect(result).toEqual(null);
+});
+
 it('should return addition', () => {
     let result = calc('1 + 1');
 
