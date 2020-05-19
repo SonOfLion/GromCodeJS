@@ -34,3 +34,6 @@ messenger1.sendMessage('Good job!');
 
 messenger2.sendMessage('Tom'); //к второй переменной применели метод (отправки сообщения).
 messenger2.setMessage('Hello'); //применили метод с использованием (сообщения).
+
+messenger2.setSender('Bob');
+messenger2.sendMessage('Tom');
