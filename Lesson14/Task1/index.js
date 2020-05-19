@@ -1,9 +1,16 @@
+'use strict';
+
 const message = 'Good job';
 
-export const sentMessage = (name) => {
-    const sender = 'Youre Gromcode';
+export function sendMessage(name) {
+    const sender = 'Gromcode';
 
-    console.log(`${name},${message}! ${sender}`)
-};
+    console.log(`${name},${message}! Your ${sender}`);
+}
 
-sentMessage('Ann');
+export function setMessage(text) {
+    message = text;
+}
+
+// sentMessage('Ann');
+// sentMessage('Tom');
