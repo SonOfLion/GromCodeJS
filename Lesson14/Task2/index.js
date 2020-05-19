@@ -1,8 +1,8 @@
 //messendger
 
-let message = 'Hi!';
+//let message = 'Hi!';
 
-const createMessenger = () => { //функция для создания сообщений
+export default function createMessenger() { //функция для создания сообщений
     let message = 'Just learn it!';
     const sender = 'Gromcode';
 
