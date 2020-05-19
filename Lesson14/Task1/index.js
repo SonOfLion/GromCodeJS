@@ -1,6 +1,6 @@
-export const message = 'Good job';
+const message = 'Good job';
 
-const sentMessage = (name) => {
+export const sentMessage = (name) => {
     const sender = 'Youre Gromcode';
 
     console.log(`${name},${message}! ${sender}`)
