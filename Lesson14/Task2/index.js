@@ -4,7 +4,7 @@
 
 export default function createMessenger() { //функция для создания сообщений
     let message = 'Just learn it!';
-    const sender = 'Gromcode';
+    let sender = 'Gromcode';
 
     function sendMessage(name) { //создали функции отправки собщений
         console.log(`${name}, ${message}. Your ${sender}`);
