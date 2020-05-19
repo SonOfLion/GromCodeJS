@@ -7,7 +7,7 @@ export default function createMessenger() { //функция для создан
     let sender = 'Gromcode';
 
     function sendMessage(name) { //создали функции отправки собщений
-        console.log(`${name}, ${message}. Your ${sender}`);
+        console.log(`${name}, ${message} Your ${sender}`);
     }
 
     function setMessage(text) { //функция с текстом 
@@ -22,7 +22,7 @@ export default function createMessenger() { //функция для создан
         sendMessage,
         setMessage,
         setSender,
-    }
+    };
 };
 
 const messenger1 = createMessenger();
