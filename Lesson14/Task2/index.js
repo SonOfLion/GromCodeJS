@@ -26,12 +26,11 @@ export default function createMessenger() { //функция для создан
 };
 
 const messenger1 = createMessenger();
+const messenger2 = createMessenger();
 
 messenger1.sendMessage('Bob');
+messenger1.sendMessage('Good job!');
 
-const messenger2 = createMessenger();
 
 messenger2.sendMessage('Tom'); //к второй переменной применели метод (отправки сообщения).
 messenger2.setMessage('Hello'); //применили метод с использованием (сообщения).
-
-messenger1.sendMessage('Ann');
