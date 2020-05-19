@@ -29,11 +29,9 @@ const messenger1 = createMessenger();
 const messenger2 = createMessenger();
 
 messenger1.sendMessage('Bob');
-messenger1.sendMessage('Good job!');
 
-
+messenger2.setMessage('Good job!'); //применили метод с использованием (сообщения).
 messenger2.sendMessage('Tom'); //к второй переменной применели метод (отправки сообщения).
-messenger2.setMessage('Hello'); //применили метод с использованием (сообщения).
 
 messenger2.setSender('Bob');
 messenger2.sendMessage('Tom');
