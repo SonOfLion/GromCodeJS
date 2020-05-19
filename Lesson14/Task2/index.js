@@ -15,7 +15,7 @@ const createMessenger = () => { //функция для создания соо�
     }
 
     function setSender(text) {
-        message = text;
+        sender = text;
     }
 
     return {
