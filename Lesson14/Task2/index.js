@@ -3,11 +3,10 @@
 let message = 'Hi!';
 
 const createMessenger = () => { //функция для создания сообщений
+    let message = 'Just learn it!';
+    const sender = 'Gromcode';
 
     function sendMessage(name) { //создали функции отправки собщений
-        let message = 'Just learn it';
-        const sender = 'Gromcode';
-
         console.log(`${name}, ${message}. Your ${sender}`);
     }
 
@@ -23,7 +22,7 @@ const createMessenger = () => { //функция для создания соо�
         sendMessage,
         setMessage,
         setSender,
-    };
+    }
 };
 
 const messenger1 = createMessenger();
