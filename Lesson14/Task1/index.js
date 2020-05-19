@@ -1,4 +1,4 @@
-const message = 'Good job';
+export const message = 'Good job';
 
 const sentMessage = (name) => {
     const sender = 'Youre Gromcode';
