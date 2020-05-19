@@ -1,6 +1,6 @@
 'use strict';
 
-const message = 'Just learn it!';
+const message = 'Just learn it';
 
 export function sendMessage(name) {
     const sender = 'Gromcode';
