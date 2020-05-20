@@ -1,4 +1,4 @@
-function createLogger() {
+export function createLogger() {
     const memory = [];
 
     return {
@@ -35,13 +35,13 @@ function createLogger() {
     }
 }
 
-let user = createLogger();
+// let user = createLogger();
 
-user.warn('Not using!');
-user.error('Error 303!');
-user.log('hello dear user');
+// user.warn('Not using!');
+// user.error('Error 303!');
+// user.log('hello dear user');
 
-console.log(user.memory);
-console.log(user.getRecords('warn'));
-console.log(user.getRecords('error'));
-console.log(user.getRecords('log'));
+// console.log(user.memory);
+// console.log(user.getRecords('warn'));
+// console.log(user.getRecords('error'));
+// console.log(user.getRecords('log'));
