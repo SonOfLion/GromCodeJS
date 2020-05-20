@@ -6,14 +6,11 @@ export function createLogger() {
     const error = (text) => memory.push({ message: text, dateTime: new Date(), type: 'error' });
     const log = (text) => memory.push({ message: text, dateTime: new Date(), type: 'log' });
 
-    function getRecords(text) { //filter for all types;
-        if (text === 'warn')
-            return memory.filter((el) => el.type === 'warn');
-        if (text === 'error')
-            return memory.filter((el) => el.type === 'error');
-        if (text === 'log')
-            return memory.filter((el) => el.type === 'log');
-        return memory;
+    function getRecords(type) { //filter and sort for all types;
+        if (type === undefined)
+            return memory.sort((a, b) => a - b);
+        else
+            return memory.filter((el) => el.type === 'type').sort((a, b) => b - a);
     }
 
     const storage = { //storage for all types;
