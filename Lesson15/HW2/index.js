@@ -8,9 +8,9 @@ export function createLogger() {
 
     function getRecords(type) { //filter and sort for all types;
         if (type === undefined)
-            return memory.sort((a, b) => b - a);
+            return memory.sort((a, b) => b.dateTime - a.dateTime);
         else
-            return memory.filter((el) => el.type === 'type').sort((a, b) => b - a);
+            return memory.filter((el) => el.type === 'type').sort((a, b) => b.dateTime - a.dateTime);
     }
 
     const storage = { //storage for all types;
