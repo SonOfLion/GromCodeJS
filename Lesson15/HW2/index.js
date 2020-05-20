@@ -1,10 +1,30 @@
 export function createLogger() {
     const memory = [];
 
-    //input:text//output:undefined;
-    let warn = (text) => memory.push({ message: text, dateTime: new Date(), type: 'warn' });
-    const error = (text) => memory.push({ message: text, dateTime: new Date(), type: 'error' });
-    const log = (text) => memory.push({ message: text, dateTime: new Date(), type: 'log' });
+    //input:text//output:undefined;USE OBJECT TYPE!!!
+    return {
+        warn(text) {
+            memory.push({
+                message: text,
+                dateTime: new Date(),
+                type: 'warn'
+            });
+        },
+        error(text) {
+            memory.push({
+                message: text,
+                dateTime: new Date(),
+                type: 'error'
+            });
+        },
+        log(text) {
+            memory.push({
+                message: text,
+                dateTime: new Date(),
+                type: 'log',
+            });
+        },
+    },
 
     function getRecords(type) { //filter and sort for all types;
         if (type === undefined)
@@ -31,3 +51,5 @@ export function createLogger() {
 
 // console.log(user.memory);
 // console.log(user.getRecords('warn'));
+// console.log(user.getRecords('error'));
+// console.log(user.getRecords('log'));
