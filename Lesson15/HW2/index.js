@@ -1,4 +1,4 @@
-export function createLogger() {
+function createLogger() {
     const memory = [];
 
     return {
@@ -28,20 +28,20 @@ export function createLogger() {
 
         getRecords(type) { //сортировка и фильтр,все элементы по убыванию.
             if (type === undefined)
-                return result.sort((a, b) => b.dateTime - a.dateTime);
+                return memory.sort((a, b) => b.dateTime - a.dateTime);
             else
-                return result.filter((el) => el.type === type).sort((a, b) => b.dateTime - a.dateTime);
-        }
+                return memory.filter((el) => el.type === type).sort((a, b) => b.dateTime - a.dateTime);
+        },
     }
 }
 
-// let user = createLogger();
+let user = createLogger();
 
-// user.warn('Not using!');
-// user.error('Error 303!');
-// user.log('hello dear user');
+user.warn('Not using!');
+user.error('Error 303!');
+user.log('hello dear user');
 
-// console.log(user.memory);
-// console.log(user.getRecords('warn'));
-// console.log(user.getRecords('error'));
-// console.log(user.getRecords('log'));
+console.log(user.memory);
+console.log(user.getRecords('warn'));
+console.log(user.getRecords('error'));
+console.log(user.getRecords('log'));
