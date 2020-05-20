@@ -1,6 +1,6 @@
 import { createLogger } from './index.js';
 
-it('should shome message warn', () => {
+it('should show message warn', () => {
     let err = createLogger;
     err.error('Error 303!');
 
