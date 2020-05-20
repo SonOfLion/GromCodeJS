@@ -1,15 +1,15 @@
 //counter
 
 
-const makeCounter = () => {
+export const makeCounter = () => {
     let count = 0;
 
     return function() {
         return count++;
     }
 };
-const counter1 = makeCounter();
-const counter2 = makeCounter();
+export const counter1 = makeCounter();
+export const counter2 = makeCounter();
 
 console.log(counter1()); //0
 console.log(counter1()); //1
