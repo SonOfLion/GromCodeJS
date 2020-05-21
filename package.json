@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "jest": "^26.0.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,9 +20,5 @@
   "bugs": {
     "url": "https://github.com/SonOfLion/GromCodeTasks/issues"
   },
-  "homepage": "https://github.com/SonOfLion/GromCodeTasks#readme",
-  "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6"
-  }
+  "homepage": "https://github.com/SonOfLion/GromCodeTasks#readme"
 }
