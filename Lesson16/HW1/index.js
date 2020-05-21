@@ -3,7 +3,7 @@
 
 export function createArrayOfFunctions(num) {
     if (typeof num !== 'number') return null;
-    if (num === undefined) return result;
+    if (num === undefined) return emptyArr;
 
     let emptyArr = [];
 
