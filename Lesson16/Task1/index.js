@@ -1,8 +1,8 @@
-let a = 17;
+var a = 17;
 
 if (a) {
 
-    let a = 1;
+    var a = 1;
 
     console.log(a);
 
