@@ -4,8 +4,8 @@
 export function createArrayOfFunctions(num) {
     let emptyArr = [];
 
-    if (typeof num !== 'number') return null;
     if (num == undefined) return emptyArr;
+    if (typeof num !== 'number') return null;
 
 
     for (let i = 0; i < num; i++) {
