@@ -1,7 +1,7 @@
 //inpit:num;
 //output:arr;
 
-function createArrayOfFunctions(num) {
+export function createArrayOfFunctions(num) {
     if (typeof num !== 'number') return null;
     if (num === undefined) return result;
 
