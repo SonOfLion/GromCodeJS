@@ -1,4 +1,6 @@
-export var foo = 1;
+var foo = 1;
+
+export default foo;
 
 function bar() {
     if (!foo) {
