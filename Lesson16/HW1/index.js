@@ -7,7 +7,7 @@ function createArrayOfFunctions(num) {
 
     let emptyArr = [];
 
-    for (let i = 0; i < emptyArr.length; i++) {
+    for (let i = 0; i < num.length; i++) {
         emptyArr[i] = function() {
             return i;
         }
