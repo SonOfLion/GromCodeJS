@@ -5,7 +5,7 @@ export function createArrayOfFunctions(num) {
     let emptyArr = [];
 
     if (typeof num !== 'number') return null;
-    if (num === undefined) return emptyArr;
+    if (num == undefined) return emptyArr;
 
 
     for (let i = 0; i < num; i++) {
