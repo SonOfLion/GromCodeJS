@@ -3,8 +3,8 @@ export const user = {
     lastName: 'Doe',
 
     getFullName() {
-        console.log(`${this.firstName} ${this.lastName}`)
+        return `${this.firstName} ${this.lastName}`;
     }
 };
 
-user.getFullName();
+// user.getFullName();
