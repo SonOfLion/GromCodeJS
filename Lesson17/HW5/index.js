@@ -15,6 +15,14 @@ export const timer = {
         }, 1000);
     },
 
+    getTime() {
+
+    },
+
+    stopTime() {
+
+    },
+
     resetTimer() { //Must stoped timer and refresh property of timer
         this.secondsPassed = 0;
         this.minsPassed = 0;
