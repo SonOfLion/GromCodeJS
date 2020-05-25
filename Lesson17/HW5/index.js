@@ -16,7 +16,8 @@ export const timer = {
     },
 
     getTime() {
-        return `${this.minsPassed}:${this.secondsPassed}`; //Show time
+        return `${this.minsPassed}:${this.secondsPassed}`;
+        return `${this.minsPassed}:0${this.secondsPassed}`; //Show time
     },
 
     stopTimer() {
