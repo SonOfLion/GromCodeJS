@@ -1,26 +1,26 @@
 //Нужно создать таймер с памятью
 
 export const timer = {
-    secondsPassed = 0,
-    minsPassed = 0,
-    counterOfTimer = 0,
+    secondsPassed: 0,
+    minsPassed: 0,
+    counterOfTimer: 0,
 
-    startTimer() { //
-        this.counterOfTimer.setInterval(() => {
+    startTimer() {
+        this.counterOfTimer = setInterval(() => {
             this.secondsPassed + 1;
             if (this.secondsPassed === 60) { //Если таймер достигнет === 60 сек, его нужно обнулить до 0 и заного запустить цикл
                 this.secondsPassed = 0; //Задать новое значение
-                this.secondsPassed++; //Шаг цикла
+                this.minsPassed++; //Шаг цикла
             }
         }, 1000);
     },
 
     getTime() {
-
+        return `${this.minsPassed}:${this.secondsPassed}`; //Show time
     },
 
-    stopTime() {
-
+    stopTimer() {
+        clearInterval(this.counterOfTimer); //Остановка таймера с сохранением результата
     },
 
     resetTimer() { //Must stoped timer and refresh property of timer
@@ -28,3 +28,7 @@ export const timer = {
         this.minsPassed = 0;
     },
 }
+
+// console.log(timer.startTimer());
+// console.log((() => timer.stopTimer(1), 1000));
+// console.log((() => console.log(timer.getTime(2)), 2000));
