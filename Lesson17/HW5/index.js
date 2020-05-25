@@ -9,8 +9,8 @@ export const timer = {
         this.counterOfTimer.setInterval(() => {
             this.secondsPassed + 1;
             if (this.secondsPassed === 60) { //Если таймер достигнет === 60 сек, его нужно обнулить до 0 и заного запустить цикл
-                this.secondsPassed = 0;
-                this.secondsPassed++;
+                this.secondsPassed = 0; //Задать новое значение
+                this.secondsPassed++; //Шаг цикла
             }
         }, 1000);
     },
