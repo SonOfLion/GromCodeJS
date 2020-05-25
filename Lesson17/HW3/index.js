@@ -11,14 +11,14 @@ function sayName() {
  * создайте ф-цию sayStudentName которая будет выводить в консоль имя студента 'Tom'
  * используйте .bind и ф-цию sayName
  */
-let sayStudentName = sayName.bind(student);
+export let sayStudentName = sayName.bind(student);
 sayStudentName();
 
 /*
  * создайте ф-цию sayBruceName которая будет выводить в консоль имя 'Bruce'
  * используйте ф-цию sayName и .bind с нужным объектом
  */
-let sayBruceName = sayName.bind({ name: 'Bruce' });
+export let sayBruceName = sayName.bind({ name: 'Bruce' });
 sayBruceName();
 
 /* ===> 2 <=== */
@@ -36,7 +36,7 @@ function greeting(firstName, lastName) {
  * используйте ф-цию greeting и .bind с нужным объектом и аргументами
  * specialGreeting не должна принимать ни одного аргумента
  */
-let specialGreeting = greeting.bind({...company }, ['Bob'], ['Marley']);
+export let specialGreeting = greeting.bind({...company }, ['Bob'], ['Marley']);
 specialGreeting();
 
 /* ===> 3 <=== */
@@ -56,7 +56,7 @@ function getPopulation(population) {
  * используйте ф-цию getPopulation и .bind с нужным объектом и аргументами
  * getUkrainePopulation не должна принимать ни одного аргумента
  */
-let getUkrainePopulation = getPopulation.bind({...country }, [43000]);
+export let getUkrainePopulation = getPopulation.bind({...country }, [43000]);
 console.log(getUkrainePopulation());
 
 /* ===> 4 <=== */
@@ -83,5 +83,5 @@ const anotherTransaction = {
  * используйте метод transaction.printTransaction и .bind с нужным объектом
  * printSpecialTransaction не должна принимать ни одного аргумента
  */
-let printSpecialTransaction = transaction.printTransaction.bind({...anotherTransaction });
+export let printSpecialTransaction = transaction.printTransaction.bind({...anotherTransaction });
 printSpecialTransaction();
