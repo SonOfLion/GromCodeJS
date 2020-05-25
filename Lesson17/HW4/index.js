@@ -12,4 +12,4 @@ export const user = {
         this.lastName = cutOff[1];
     },
 };
-console.log(user.getFullName());
+console.log(user.getFullName('John', 'Doe'));
