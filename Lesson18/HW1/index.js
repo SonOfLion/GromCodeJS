@@ -10,7 +10,7 @@ export function saveCalls(func) { //1 create func (func)++
     withMemory.calls = []; //3 Create empty array
 
     function withMemory() {
-        withMemory.calls.push([arguments])
+        withMemory.calls.push([...arguments])
         return func.calls;
     }
     return withMemory; //2 return func++
