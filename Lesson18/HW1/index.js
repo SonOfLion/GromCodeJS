@@ -6,7 +6,7 @@
 //Algo
 //func saveCalls (func) => return func name"withMemory"++
 //saveCalls must create array of calls push to arguments ++
-function saveCalls(func) { //1 create func (func)++
+export function saveCalls(func) { //1 create func (func)++
     withMemory.calls = []; //3 Create empty array++
 
     function withMemory() {
