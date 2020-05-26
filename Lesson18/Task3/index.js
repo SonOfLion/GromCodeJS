@@ -1,6 +1,6 @@
 //pseudo array
 
-function sumOfSquares(...numbers) {
+export function sumOfSquares(...numbers) {
     // console.log(typeof arguments);
 
     return [...arguments].reduce((acc, elem) => {
