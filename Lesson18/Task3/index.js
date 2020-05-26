@@ -1,9 +1,10 @@
+'use strict';
 //pseudo array
 
-export function sumOfSquares(...numbers) {
+function sumOfSquares(...numbers) {
     // console.log(typeof arguments);
 
-    return [...arguments].reduce((acc, elem) => {
+    return [...numbers].reduce((acc, elem) => {
         return acc + elem;
     }, 0);
 }
