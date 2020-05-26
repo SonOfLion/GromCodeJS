@@ -1,14 +1,14 @@
 //wallet - заимствование метода.
 
 export const wallet = {
-    transaction: [1, 2, 3, 4, 5, 13, 78, 99],
+    transactions: [1, 2, 3, 4, 5, 13, 78, 99],
 
     getMax() {
-        return Math.max(...this.transaction);
+        return Math.max(...this.transactions);
     },
 
     getMin() {
-        return Math.min(...this.transaction);
+        return Math.min(...this.transactions);
     },
 }
 
