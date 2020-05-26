@@ -11,7 +11,7 @@ function saveCalls(func) { //1 create func (func)++
 
     function withMemory() {
         withMemory.calls.push([...arguments]) //пушить все вызовы функции
-        return func.call(this); //вызвать функци (func) и сохранить контекст.
+        return func.call(this); //вызвать функци (func) и сохранить контекст
     }
     return withMemory; //2 return func++
 }
