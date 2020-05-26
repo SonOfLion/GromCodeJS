@@ -5,7 +5,7 @@ export function sumOfSquares(...numbers) {
     // console.log(typeof arguments);
 
     return [...numbers].reduce((acc, elem) => {
-        return acc + elem;
+        return acc += elem * elem;
     }, 0);
 }
 
