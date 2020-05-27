@@ -15,7 +15,7 @@ export function getOwnProps(obj) {
     const empArr = [];
 
     for (let prop in obj) {
-        if (obj.hasOwnProperty(prop)) {
+        if (obj.hasOwnProperty(prop) && typeof obj[prop] !== 'function') {
             return empArr.push(prop);
         }
     }
