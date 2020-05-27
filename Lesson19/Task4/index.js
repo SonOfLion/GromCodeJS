@@ -1,18 +1,20 @@
 'use strict';
 
-export const user = {
+export default user;
+
+const user = {
     firstName: 'John',
     lastName: 'Doe',
 
     get fullNameOfUser() {
-        return `${this.firstName} ${this.lastName}` //return fullname of user;
+        return `${this.firstName} ${this.lastName}` //return fullname of user;++
     },
 
-    set fullNameOfUser(property) { //split username by property
+    set fullNameOfUser(property) { //split username by property ++
         const [firstName, lastName] = property.split(' ');
         this.firstName = firstName;
         this.lastName = lastName;
-    }, //return undefined;
+    }, //return undefined;++
 };
 
 console.log(user.fullNameOfUser);
