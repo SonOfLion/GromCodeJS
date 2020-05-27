@@ -4,15 +4,16 @@ export function User(name, age) {
     this.age = age;
 
     User.prototype.sayHi = function() {
-        console.log(`Hi, I am ${this.name} `);
+        console.log(`Hi, I am ${this.name}`);
     }
 
     User.prototype.requestNewPhoto = function() {
         console.log(`New photo request was sent for ${this.name}`);
     }
 
-    User.prototype.setAge = function() {
+    User.prototype.setAge = function(newAge) {
         if (age < 0) return false;
+        this.age = newAge;
         if (age >= 25) {
             console.log(`New photo request was sent for ${this.name}`);
         }
@@ -27,5 +28,8 @@ let user3 = new User('Mattew', -1);
 user1.setAge();
 user2.setAge();
 user3.setAge();
+
+user2.sayHi();
+user1.sayHi();
 
 // console.log(user1.sayHi === user2.sayHi); //Потому что функцию sayHi каждый раз вызываем для каждого отдельного конструктора
