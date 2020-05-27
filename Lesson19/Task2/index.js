@@ -16,9 +16,10 @@ export function getOwnProps(obj) {
 
     for (let prop in obj) {
         if (obj.hasOwnProperty(prop) && typeof obj[prop] !== 'function') {
-            return empArr.push(prop);
+            empArr.push(prop);
         }
     }
+    return empArr;
 }
 
 // for (let prop in ship) {
