@@ -1,6 +1,8 @@
 'use strict';
 
-export default user = {
+export default user;
+
+const user = {
     firstName: 'John',
     lastName: 'Doe',
 
