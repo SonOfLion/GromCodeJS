@@ -27,7 +27,7 @@ export const ship = {
         ship.move();
     },
     stopMachine() {
-        console.log(`{this.name} lifting anchor down`)
+        console.log(`{this.name} lifting anchor down`);
         ship.stop();
     },
     __proto__: vehicle
