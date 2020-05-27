@@ -13,7 +13,7 @@ export const vehicle = {
         console.log(`${this.name} is moving`);
     },
     stop() {
-        console.log(`${this.name} is stopped`);
+        console.log(`${this.name} stopped`);
     }
 
 };
@@ -38,5 +38,6 @@ export const ship = {
 console.log(vehicle);
 ship.move;
 console.log(ship);
+console.log(ship.stopMachine());
 
 // [Prototype]-- getter and sette;
