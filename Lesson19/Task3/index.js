@@ -12,7 +12,7 @@ export function User(name, age) {
     }
 
     User.prototype.setAge = function(newAge) {
-        if (age < 0) return false;
+        if (newAge < 0) return false;
         this.age = newAge;
         if (newAge >= 25) {
             console.log(`New photo request was sent for ${this.name}`);
