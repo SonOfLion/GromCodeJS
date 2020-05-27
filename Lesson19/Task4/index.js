@@ -1,6 +1,6 @@
 'use strict';
 
-export const user = {
+const user = {
     firstName: 'John',
     lastName: 'Doe',
 
