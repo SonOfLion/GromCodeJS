@@ -10,10 +10,10 @@
 
 export const vehicle = {
     move() {
-        console.log(`{this.name} is moving`);
+        console.log(`${this.name} is moving`);
     },
     stop() {
-        console.log(`{this.name} is stopped`);
+        console.log(`${this.name} is stopped`);
     }
 
 };
@@ -23,12 +23,12 @@ export const ship = {
     hasWheels: false,
 
     startMachine() {
-        console.log(`{this.name} lifting anchor up`);
+        console.log(`${this.name} lifting anchor up`);
         ship.move();
     },
     stopMachine() {
         ship.stop();
-        console.log(`{this.name} lifting anchor down`);
+        console.log(`${this.name} lifting anchor down`);
     },
     __proto__: vehicle
 };
