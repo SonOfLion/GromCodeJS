@@ -1,6 +1,6 @@
 'use strict';
 
-export default user = {
+export const user = {
     firstName: 'John',
     lastName: 'Doe',
 
