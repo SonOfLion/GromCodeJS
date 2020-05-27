@@ -26,5 +26,6 @@ let user3 = new User('Mattew', -1);
 
 user1.setAge();
 user2.setAge();
+user3.setAge();
 
 // console.log(user1.sayHi === user2.sayHi); //Потому что функцию sayHi каждый раз вызываем для каждого отдельного конструктора
