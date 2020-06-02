@@ -37,10 +37,10 @@ export class UserRepository {
         return this._users;
     }
     getUserNames() {
-        return this._user.find((el) => el._name);
+        return this._user.map((el) => el._name);
     }
     getUserIds() {
-        return this._user.find((el) => el._id)
+        return this._user.map((el) => el._id)
     }
     getUserNameById(id) {
         return this._user.find((el) => el._id === id)._name;
