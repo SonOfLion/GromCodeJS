@@ -10,7 +10,7 @@
 //10. if confirmOrder isConfirmed true dateConfirmed = new Date()  (if product has not been confirmed before) ++
 //11. isValidType if type buy === true and sell === true return true and false another moment ++
 
-class Order {
+export class Order {
     constructor(price, city, type) {
         this.id = `${Math.random()}`;
         this.price = price;
