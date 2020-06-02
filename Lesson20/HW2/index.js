@@ -29,7 +29,7 @@ export class User {
 
 export class UserRepository {
     constructor(users) {
-        this._user = Object.freeze(users);
+        this._users = Object.freeze(users);
     };
 
     //first need get users
@@ -37,13 +37,13 @@ export class UserRepository {
         return this._users;
     }
     getUserNames() {
-        return this._user.map((el) => el._name);
+        return this._users.map((el) => el._name);
     }
     getUserIds() {
-        return this._user.map((el) => el._id)
+        return this._users.map((el) => el._id)
     }
     getUserNameById(id) {
-        return this._user.find((el) => el._id === id)._name;
+        return this._users.find((el) => el._id === id)._name;
     }
 }
 
