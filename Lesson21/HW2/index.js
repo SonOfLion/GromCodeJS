@@ -15,4 +15,4 @@ function getItemsArray() {
 getItemsList();
 getItemsArray();
 
-export { getItemList, getItemsArray }
+export { getItemsList, getItemsArray }
