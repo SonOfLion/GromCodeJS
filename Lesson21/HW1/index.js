@@ -14,3 +14,5 @@ function getInputElement() {
 
 getInputElement();
 getTitleElement();
+
+export { getInputElement, getTitleElement };
