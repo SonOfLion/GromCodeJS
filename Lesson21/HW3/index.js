@@ -19,7 +19,7 @@ function getPlans() {
     return plans;
 }
 
-function getGoals() {
+function getGoal() {
     const goal = document.querySelector('.goal').textContent;
 
     console.dir(goal);
@@ -29,6 +29,6 @@ function getGoals() {
 getTitle();
 getDescription();
 getPlans();
-getGoals();
+getGoal();
 
-export { getTitle, getDescription, getPlans, getGoals };
+export { getTitle, getDescription, getPlans, getGoal };
