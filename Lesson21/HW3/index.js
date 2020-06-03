@@ -20,7 +20,7 @@ function getPlans() {
 }
 
 function getGoal() {
-    const goal = document.querySelector('.goal').innerHTML;
+    const goal = document.querySelector('.goal').outerHTML;
 
     console.dir(goal);
     return goal;
