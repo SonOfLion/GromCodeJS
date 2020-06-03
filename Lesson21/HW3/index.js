@@ -13,10 +13,10 @@ function getDescription() {
 }
 
 function getPlans() {
-    const plans = document.querySelector('.plans').innerHTML;
+    const plan = document.querySelector('.plans').innerHTML;
 
-    console.dir(plans);
-    return plans;
+    console.dir(plan);
+    return plan;
 }
 
 function getGoal() {
