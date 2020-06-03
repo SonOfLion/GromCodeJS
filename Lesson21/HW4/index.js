@@ -2,6 +2,6 @@ const setTitle = (text) => {
     return document.querySelector('.title').textContent = `${text}`;
 };
 
-setTitle('hello');
+// setTitle('hello');
 
 export { setTitle };
