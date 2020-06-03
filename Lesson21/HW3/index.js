@@ -6,21 +6,21 @@ function getTitle() {
 }
 
 function getDescription() {
-    const desc = document.querySelector('.about').textContent;
+    const desc = document.querySelector('.about').innerText;
 
     console.dir(desc);
     return desc;
 }
 
 function getPlans() {
-    const plans = document.querySelector('.plans').textContent;
+    const plans = document.querySelector('.plans').innerHTML;
 
     console.dir(plans);
     return plans;
 }
 
 function getGoal() {
-    const goal = document.querySelector('.goal').textContent;
+    const goal = document.querySelector('.goal').innerHTML;
 
     console.dir(goal);
     return goal;
