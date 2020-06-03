@@ -14,9 +14,9 @@ const getGoal = () => {
     return document.querySelector('.goal').outerHTML;
 };
 
-getTitle();
-getDescription();
-getPlans();
-getGoal();
+// getTitle();
+// getDescription();
+// getPlans();
+// getGoal();
 
 export { getTitle, getDescription, getPlans, getGoal };
