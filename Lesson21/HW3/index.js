@@ -1,25 +1,17 @@
 function getTitle() {
-    const textCont = document.querySelector('.title').textContent;
-
-    return textCont;
+    return document.querySelector('.title').textContent;
 }
 
 function getDescription() {
-    const desc = document.querySelector('.about').innerText;
-
-    return desc;
+    return document.querySelector('.about').innerText;
 }
 
 function getPlans() {
-    const plan = document.querySelector('.plans').innerHTML;
-
-    return plan;
+    return document.querySelector('.plans').innerHTML;
 }
 
 function getGoal() {
-    const goal = document.querySelector('.goal').outerHTML;
-
-    return goal;
+    return document.querySelector('.goal').outerHTML;
 }
 
 getTitle();
