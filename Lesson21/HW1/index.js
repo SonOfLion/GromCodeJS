@@ -6,10 +6,10 @@ function getTitleElement() {
 }
 
 function getInputElement() {
-    const getInput = document.querySelector('.text');
+    const inputElem = document.querySelector('input[type="text"]');
 
-    console.dir(getInput);
-    return getInput;
+    console.dir(inputElem);
+    return inputElem;
 }
 
 getInputElement();
