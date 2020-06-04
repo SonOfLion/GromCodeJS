@@ -1,4 +1,4 @@
-function manageClases() {
+function manageClasses() {
     const one = document.querySelector('one');
     one.classList.add('selected');
 
@@ -14,4 +14,4 @@ function manageClases() {
     }
 }
 
-export { manageClases };
+export { manageClasses };
