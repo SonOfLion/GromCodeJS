@@ -2,7 +2,7 @@ const finishForm = () => {
     const passInp = document.querySelector('input[type="text"]');
     passInp.type = 'password';
 
-    const logInp = document.querySelector('input');
+    const logInp = document.createElement('input');
     logInp.type = 'text';
     logInp.name = 'login';
 
