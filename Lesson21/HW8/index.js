@@ -1,4 +1,4 @@
-function finisList() {
+function finishList() {
     const firstElem = document.createElement('li');
     const fourthElem = document.createElement('li');
     const sixElem = document.createElement('li');
@@ -20,4 +20,4 @@ function finisList() {
 
 // finisList();
 
-export { finisList };
+export { finishList };
