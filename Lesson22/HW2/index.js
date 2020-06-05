@@ -1,5 +1,7 @@
 const task = document.querySelector('.task-status');
 
-task.addEventListener('change', () => {
-    console.dir(task.value);
-});
+const checkedChBox = () => {
+    console.log(task.checked);
+};
+
+task.addEventListener('change', checkedChBox);
