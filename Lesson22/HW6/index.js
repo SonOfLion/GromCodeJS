@@ -1,4 +1,4 @@
-const button = document.querySelector('.btn');
+const button = document.querySelectorAll('.btn');
 
 const clik = (event) => {
     console.log(event.target.textContent);
