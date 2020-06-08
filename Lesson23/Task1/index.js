@@ -42,7 +42,7 @@ passwordlInputElem.addEventListener('input', onPasswordChange);
 
 const formElem = document.querySelector('.login-form');
 
-const onFormSubmit = even => {
+const onFormSubmit = event => {
     event.preventDefault();
     const formData = [...new formData(formElem)]
         .reduce((acc, [field, value]) => ({...acc, [field]: value }, {}));
