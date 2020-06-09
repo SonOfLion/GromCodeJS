@@ -54,7 +54,7 @@ const doneTask = (a, b) => {
     if (a.done - b.done !== 0) {
         return a.done - b.done;
     }
-    console.log(doneTask)
+    // console.log(doneTask)
     if (a.done === true) {
         return new Date(b.doneDate) - new Date(a.doneDate);
     }
