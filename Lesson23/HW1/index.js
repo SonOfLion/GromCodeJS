@@ -1,5 +1,5 @@
-//input: numbers;
-//output: numbers;
+//input: num,num;
+//output: num of day, num of hours num of minutes num of seconds;
 // daysDifference = Math.ceil(Math.abs(startDate.getTime() - endDate.getTime()) / (1000 * 60 * 60 * 24));
 
 export function getDiff(startDate, endDate) {
