@@ -15,7 +15,7 @@ const tasks = [{
         text: 'Buy milk',
         done: false,
         id: '1',
-        createDate: new Date(2020, 5, 12),
+        createDate: new Date(),
         doneDate: undefined,
     },
     {
