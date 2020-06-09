@@ -51,7 +51,7 @@ const tasks = [{
 const listElem = document.querySelector('.list');
 const renderTasks = (tasksList) => {
     listElem.innerHTML = '';
-    const tasksElem = tasksList
+    const tasksElems = tasksList
         .slice()
         .sort((a, b) => {
             if (a.done !== b.done) return a.done - b.done
@@ -72,11 +72,11 @@ const renderTasks = (tasksList) => {
             listItemElem.append(checkbox, task.text);
             return listItemElem;
         });
-    listElem.append(...tasksElem);
-    // console.log(tasksElem);
+    //console.log(tasksElems)
+    listElem.append(...tasksElems);
 };
 renderTasks(tasks);
-// console.log(tasks);
+
 const inputAdd = document.querySelector('.task-input')
 
 const createBtn = document.querySelector('.btn');
