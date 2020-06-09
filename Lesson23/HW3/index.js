@@ -23,7 +23,7 @@ const tasks = [{
         done: false,
         id: '2',
         createDate: new Date(),
-        doneDate: undefined,
+        doneDate: null,
     },
     {
         text: 'Visit party',
@@ -44,7 +44,7 @@ const tasks = [{
         done: true,
         id: '5',
         createDate: new Date(),
-        doneDate: undefined,
+        doneDate: null,
     },
 ];
 
