@@ -16,7 +16,7 @@ const tasks = [{
         done: false,
         id: '1',
         createDate: new Date(),
-        doneDate: undefined,
+        doneDate: null,
     },
     {
         text: 'Pick up Tom from airport',
