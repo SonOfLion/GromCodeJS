@@ -1,16 +1,3 @@
-// 1 при нажатии на кнопку создать запись с текстом и добавить в список
-// 2 после добавления почистить поле ввода,если поле пустое не добавлять задачу
-// 3 создать событие на чекбокс 
-// 4 сравнить значение id  на чекбоксе если элемент чек присвоить значение done
-// algo:
-// 1. create array of tasks - and create 5 test tasks +++
-// 2. write renderTasks (tasks) fucn that render all tasks+++
-// 3. addEventListener for .list+++
-// 4. addEventListener for create button+++
-// 5. checkbox handler - update task in the array and render tasks+++
-// 6. create handler - create task object and put to the array and render tasks+++
-// 7. tasks not completed should will be sorted by date added +++
-
 const tasks = [{
         text: 'Buy milk',
         done: false,
