@@ -30,14 +30,14 @@ const tasks = [{
         done: false,
         id: '3',
         createDate: new Date(),
-        doneDate: undefined,
+        doneDate: new Date(),
     },
     {
         text: 'Visit doctor',
         done: true,
         id: '4',
         createDate: new Date(),
-        doneDate: undefined,
+        doneDate: new Date(),
     },
     {
         text: 'Buy meat',
