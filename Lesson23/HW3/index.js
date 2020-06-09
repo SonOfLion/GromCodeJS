@@ -54,11 +54,10 @@ const doneTask = (a, b) => {
     if (a.done - b.done !== 0) {
         return a.done - b.done;
     }
-    console.log(doneTask)
     if (a.done === true) {
         return new Date(b.doneDate) - new Date(a.doneDate);
     }
-    return new Date(a.date) - new Date(b.date);
+    return new Date(b.date) - new Date(a.date);
 };
 
 const renderTasks = (tasksList) => {
