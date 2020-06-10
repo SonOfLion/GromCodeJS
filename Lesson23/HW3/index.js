@@ -91,15 +91,11 @@ listElem.addEventListener('click', updateTask);
 
 function updateTask(event) {
     const classes = event.target.classList;
-
     if (!classes.contains('list__item-checkbox')) return;
 
     const task = tasks.find(task => task.id === event.target.dataset.id);
-
     task.done = event.target.checked;
-
     task.doneDate = new Date();
-
     renderTasks(tasks);
 }
 
