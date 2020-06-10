@@ -54,9 +54,11 @@ const doneTask = (a, b) => {
     if (a.done - b.done !== 0) {
         return a.done - b.done;
     }
+
     if (a.done === true) {
         return new Date(b.doneDate) - new Date(a.doneDate);
     }
+
     return new Date(b.date) - new Date(a.date);
 };
 
@@ -79,6 +81,7 @@ const renderTasks = (tasksList) => {
             listItemElem.append(checkbox, task.text);
             return listItemElem;
         });
+
     listElem.append(...tasksElems);
 };
 
@@ -89,13 +92,12 @@ listElem.addEventListener('click', updateTask);
 function updateTask(event) {
     const classes = event.target.classList;
 
-    if (!classes.contains('list__item-checkbox')) {
-        return;
-    }
+    if (!classes.contains('list__item-checkbox')) return;
 
     const task = tasks.find(task => task.id === event.target.dataset.id);
 
     task.done = event.target.checked;
+
     task.doneDate = new Date();
 
     renderTasks(tasks);
@@ -107,7 +109,6 @@ createBtn.addEventListener('click', createTask);
 function createTask() {
     const input = document.querySelector('.task-input');
     const inputValue = input.value;
-
     if (!inputValue) return;
 
     tasks.push({
