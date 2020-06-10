@@ -15,39 +15,39 @@ const tasks = [{
         text: 'Buy milk',
         done: false,
         id: '1',
-        createDate: new Date(),
-        doneDate: null,
+        date: new Date(),
+        doneDate: null
     },
     {
         text: 'Pick up Tom from airport',
         done: false,
         id: '2',
-        createDate: new Date(),
-        doneDate: null,
+        date: new Date(),
+        doneDate: null
     },
     {
         text: 'Visit party',
         done: false,
         id: '3',
-        createDate: new Date(),
-        doneDate: null,
+        date: new Date(),
+        doneDate: null
     },
     {
         text: 'Visit doctor',
         done: true,
         id: '4',
-        createDate: new Date(),
-        doneDate: new Date(),
+        date: new Date(),
+        doneDate: new Date()
     },
+
     {
         text: 'Buy meat',
         done: true,
         id: '5',
-        createDate: new Date(),
-        doneDate: new Date(),
+        date: new Date(),
+        doneDate: new Date()
     },
 ];
-
 const listElem = document.querySelector('.list');
 
 const doneTask = (a, b) => {
