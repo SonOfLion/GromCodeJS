@@ -1,4 +1,4 @@
-import { renderTasks } from `./renderer.js`;
+import { renderTasks } from `./renderTask.js`;
 import { getItem, setItem } from `./storage.js`;
 
 export const onToggleTask = (e) => {
