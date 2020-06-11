@@ -5,7 +5,7 @@ const compareTasks = (a, b) => {
     if (a.done !== b.done) return a.done - b.done
     if (a.done) return new Date(b.doneDate) - new Date(a.doneDate)
     return new Date(b.date) - new Date(a.date)
-}
+};
 
 const createCheckbox = ({ done, id }) => {
     const checkboxElem = document.createElement('input');

@@ -1,4 +1,4 @@
-import { renderTasks } from `./renderTasks.js`;
+import { renderTasks } from `./renderTask.js`;
 import { getItem, setItem } from `./storage.js`;
 
 export const onCreateTask = () => {
