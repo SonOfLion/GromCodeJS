@@ -5,7 +5,7 @@ const tree = {
     name: 'Products',
     nodes: [{
             id: 'id-2',
-            name: 'Fond',
+            name: 'Food',
             nodes: [{
                 id: 'id-6',
                 name: 'Drinks',
@@ -14,18 +14,22 @@ const tree = {
         },
         {
             id: 'id-17',
-            name: 'Vehicle',
+            name: 'Vehicles',
             nodes: []
         }
     ],
 };
 
 export const markFavorites = (tree, favorites) => {
-    const isFavorite = favorite.includes(tree, id);
+    const isFavorite = favorites.includes(tree.id);
 
     return {
         ...tree,
         isFavorite,
-        nodes: tree.nodes.map(childNode => markFavorites(childNode, favorites));
+        nodes: tree.nodes.map(childNode => markFavorites(childNode, favorites)),
     }
 };
+
+// const result = markFavorites(tree, favorites);
+
+// console.log(result);
