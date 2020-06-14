@@ -24,7 +24,7 @@ export function shmoment(currentValue) {
                 seconds: (value) => (currentDate.setSeconds(currentDate.getSeconds() - value)),
                 minutes: (value) => (currentDate.setMinutes(currentDate.getMinutes() - value)),
                 hours: (value) => (currentDate.setHours(currentDate.getHours() - value)),
-                days: (value) => (currentDate.setDate(currentDate.setDate() - value)),
+                days: (value) => (currentDate.setDate(currentDate.getDate() - value)),
                 months: (value) => (currentDate.setMonth(currentDate.getMonth() - value)),
                 years: (value) => (currentDate.setFullYear(currentDate.getFullYear() - value)),
             }
