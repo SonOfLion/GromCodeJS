@@ -15,7 +15,7 @@ const mult2 = value => value * 2;
 const div4 = value => value / 4;
 
 export const compose = (...funcs) => value => {
-    return funcs.reduce((acc, func) => func())
+    return funcs.reduce((acc, func) => func(acc), value);
 };
 
 const doEveryThing = compose(
