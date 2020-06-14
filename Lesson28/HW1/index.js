@@ -7,7 +7,7 @@ export function shmoment(currentValue) {
     let counter = {
         add(numb, value) {
             let addTime = {
-                milliSeconds: (value) => (currentDate.setMilliseconds(currentDate.getMilliseconds() + value)),
+                milliseconds: (value) => (currentDate.setMilliseconds(currentDate.getMilliseconds() + value)),
                 seconds: (value) => (currentDate.setSeconds(currentDate.getSeconds() + value)),
                 minutes: (value) => (currentDate.setMinutes(currentDate.getMinutes() + value)),
                 hours: (value) => (currentDate.setHours(currentDate.getHours() + value)),
@@ -20,7 +20,7 @@ export function shmoment(currentValue) {
         },
         subtract(numb, value) {
             let takeOverTime = {
-                milliSeconds: (value) => (currentDate.setMilliseconds(currentDate.getMilliseconds() - value)),
+                milliseconds: (value) => (currentDate.setMilliseconds(currentDate.getMilliseconds() - value)),
                 seconds: (value) => (currentDate.setSeconds(currentDate.getSeconds() - value)),
                 minutes: (value) => (currentDate.setMinutes(currentDate.getMinutes() - value)),
                 hours: (value) => (currentDate.setHours(currentDate.getHours() - value)),
