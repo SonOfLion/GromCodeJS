@@ -17,7 +17,7 @@ export const pinger = (num, period) => {
     //     clearInterval(interval);
     // }, num * per);
 
-    console.log(interval);
+    // console.log(interval);
 };
 
 pinger(5, 1000);
