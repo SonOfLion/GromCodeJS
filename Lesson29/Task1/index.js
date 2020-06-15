@@ -1,6 +1,6 @@
 //addImage
 
-function addImage(imgSrc, callback) {
+export function addImage(imgSrc, callback) {
     const imgElem = document.createElement('img');
     imgElem.setAttribute('alt', 'My photo');
 
