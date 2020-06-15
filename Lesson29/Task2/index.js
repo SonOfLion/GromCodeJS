@@ -1,6 +1,6 @@
 //pinger(num,period)
 
-const pinger = (num, period) => {
+export const pinger = (num, period) => {
     console.log('Ping');
 
     let i = num;
