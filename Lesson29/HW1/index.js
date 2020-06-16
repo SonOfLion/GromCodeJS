@@ -4,8 +4,8 @@ export function requestUserData(userId, callback) {
         return;
     };
 
-    setInterval(() => callback({
+    setTimeout(() => callback({
         userId,
         email: `${userId}@example`,
-    }), Math.ceil(Math.random() * 1000));
+    }), Math.ceil(Math.random() * 1000 + 2000));
 }
