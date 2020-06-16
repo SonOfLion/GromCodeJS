@@ -1,4 +1,4 @@
-export function requestUserData(userId, callback) {
+function requestUserData(userId, callback) {
     if (userId === broken) {
         callback(null, 'Failed to load user data');
         return;
@@ -7,5 +7,5 @@ export function requestUserData(userId, callback) {
     setTimeout(() => callback({
         userId,
         email: `${userId}@example`,
-    }), Math.ceil(Math.random() * 1000 + 2000));
+    }), Math.ceil(Math.random() * 1 + 2) * 1000);
 }
