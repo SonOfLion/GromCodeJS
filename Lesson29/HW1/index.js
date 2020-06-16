@@ -1,4 +1,4 @@
-function requestUserData(userId, callback) {
+export function requestUserData(userId, callback) {
     if (userId === broken) {
         callback(null, 'Failed to load user data');
         return;
