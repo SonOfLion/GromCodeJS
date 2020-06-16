@@ -25,5 +25,5 @@ successPromise.then(function onSuccess(number) {
  * подумайте почему
  */
 successPromise.catch(function onError() {
-    console.log('I am an error', onError);
+    console.log('I am an error', onError); //Потому что все в порядке
 });
