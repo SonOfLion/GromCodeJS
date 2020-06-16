@@ -7,5 +7,5 @@ export function requestUserData(userId, callback) {
     setInterval(() => callback({
         userId,
         email: `${userId}@example`,
-    }), Math.ceil(Math.random() * 1000 + 3000));
+    }), Math.ceil(Math.random() * 1000));
 }
