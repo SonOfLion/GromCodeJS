@@ -13,12 +13,11 @@ const asyncCalculator = num => new Promise((resolve) => {
             resolve(result);
         }, 500)
     }))
-    .then(value =>
-        new Promise((resolve) => {
-            const result = value * 2;
-            console.log(`Doubled value: ${result}`);
-            return value;
-        }));
+    .then(value => {
+        const result = value * 2;
+        console.log(`Doubled value: ${result}`);
+        return value;
+    });
 
 
 // asyncCalculator(4);
