@@ -20,4 +20,4 @@ export const asyncCalculator = num => new Promise((resolve) => {
             return value;
         }));
 
-asyncCalculator(4);
+// asyncCalculator(4);
