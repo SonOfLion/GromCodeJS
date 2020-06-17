@@ -1,4 +1,4 @@
-export const requestUserData = (userId) => {
+const requestUserData = (userId) => {
     const request = new Promise((resolve, reject) => {
         if (userId === 'broken') {
             setTimeout(() => {
@@ -9,7 +9,7 @@ export const requestUserData = (userId) => {
                 resolve({
                     name: 'John',
                     age: 17,
-                    email: `${userId}`,
+                    email: `${userId}@example.com`,
                     userId
                 });
             }, 1000);
