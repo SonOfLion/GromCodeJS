@@ -14,7 +14,7 @@ successPromise
     .then(number => {
         /* fix this handler */
         const squaredNumber = number * number;
-        return number;
+        return squaredNumber;
     })
     .then(result => {
         console.log(result); // 256
@@ -27,7 +27,7 @@ successPromise
     .then(number => {
         /* fix this handler */
         return number * 10;
-        console.log(number);
+        // console.log(number);
     })
     .then(result => {
         console.log(result); // 320
