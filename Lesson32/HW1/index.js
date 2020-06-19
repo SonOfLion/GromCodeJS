@@ -8,7 +8,7 @@
 //     resolve(value);
 // });
 
-export const makePromise = value = Promise.resolve(value);
+export const makePromise = value => Promise.resolve(value);
 
 /*
  * пример использования
