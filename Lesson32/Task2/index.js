@@ -7,7 +7,7 @@ const request = url => new Promise(resolve => {
             },
             source: url
         });
-    }, Math.random * 1000, 3000);
+    }, Math.random() * 1000, 3000);
 });
 
 const servers = [
