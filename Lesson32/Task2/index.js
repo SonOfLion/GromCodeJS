@@ -7,7 +7,7 @@ const request = url => new Promise(resolve => {
             },
             source: url
         });
-    }, Math.random() * 3000 + 1000);
+    }, Math.random() * 1000 + 3000);
 });
 
 const servers = [
@@ -18,7 +18,7 @@ const servers = [
 
 export const getUserASAP = (userId) => {
     const userUrls = servers
-        .map(serverUrl => `${serverUrl}/users/${userId}`);
+        .map(serverUrl => `${serverUrl} ${userId}`);
     // console.log(userUrls);
 
     const requests = userUrls
@@ -28,5 +28,5 @@ export const getUserASAP = (userId) => {
     return Promise.race(requests);
 };
 
-getUserASAP('user-id-1')
-    .then(res => console.log(res));
+// getUserASAP('user-id-1')
+//     .then(res => console.log(res));
