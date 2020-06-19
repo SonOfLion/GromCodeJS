@@ -1,7 +1,7 @@
 const servers = [
-    'httpf://server.com/us',
-    'httpf://server.com/eu',
-    'httpf://server.com/au',
+    'https://server.com/us',
+    'https://server.com/eu',
+    'https://server.com/au',
 ];
 
 const request = url => new Promise(resolve => {
