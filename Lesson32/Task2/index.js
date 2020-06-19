@@ -18,7 +18,7 @@ const request = url => new Promise(resolve => {
 
 export const getUserASAP = (userId) => {
     const userUrls = servers
-        .map(serverUrl => `${serverUrl} ${userId}`);
+        .map(serverUrl => `${serverUrl}/${userId}`);
     // console.log(userUrls);
 
     const requests = userUrls
