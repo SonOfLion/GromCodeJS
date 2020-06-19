@@ -1,9 +1,4 @@
-const getRandomNumber = (from, to) =>
-    from + Math.random() * (to - from);
-
 const request = url => new Promise(resolve => {
-    const randomDelay = getRandomNumber(1000, 3000);
-
     setTimeout(() => {
         resolve({
             userData: {
@@ -12,7 +7,7 @@ const request = url => new Promise(resolve => {
             },
             source: url
         });
-    }, 1000, 3000);
+    }, Math.random * 1000, 3000);
 });
 
 const servers = [
