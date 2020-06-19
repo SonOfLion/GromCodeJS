@@ -16,7 +16,7 @@ const request = url => new Promise(resolve => {
     }, Math.random() * 3000 + 1000);
 });
 
-export const getUserASAP = (userId) => {
+export const getUserASAP = userId => {
     const userUrls = servers
         .map(serverUrl => `${serverUrl}/${userId}`);
     // console.log(userUrls);
