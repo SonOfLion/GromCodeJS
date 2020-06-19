@@ -13,10 +13,10 @@ const request = url => new Promise(resolve => {
             },
             source: url
         });
-    }, Math.random() * 1000 + 3000);
+    }, Math.random() * 3000 + 1000);
 });
 
-const getUserASAP = (userId) => {
+export const getUserASAP = (userId) => {
     const userUrls = servers
         .map(serverUrl => `${serverUrl} ${userId}`);
     // console.log(userUrls);
@@ -30,5 +30,3 @@ const getUserASAP = (userId) => {
 
 // getUserASAP('user-id-1')
 //     .then(res => console.log(res));
-
-export { getUserASAP };
