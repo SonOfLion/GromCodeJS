@@ -4,8 +4,8 @@
 
 /* ...code here */
 
-export const makePromise = new Promise(resolve => {
-    resolve(17);
+export const makePromise = (value) = new Promise(resolve => {
+    resolve(value);
 });
 
 // const makePromise = Promise.resolve(17);
