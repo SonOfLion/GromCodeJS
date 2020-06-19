@@ -13,7 +13,7 @@ const request = url => new Promise(resolve => {
             },
             source: url
         });
-    }, Math.random() * 3000 + 1000);
+    }, Math.random() * 1000 + 3000);
 });
 
 export const getUserASAP = userId => {
