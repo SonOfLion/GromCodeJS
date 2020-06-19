@@ -12,7 +12,7 @@ const request = url => new Promise(resolve => {
             },
             source: url
         });
-    }, randomDelay);
+    }, 1000, 3000);
 });
 
 const servers = [
@@ -21,7 +21,7 @@ const servers = [
     'httpf://server.com/au',
 ];
 
-export const getUserASAP = (userId) => {
+const getUserASAP = (userId) => {
     const userUrls = servers
         .map(serverUrl => `${serverUrl}/users/${userId}`);
 
