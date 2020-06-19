@@ -4,11 +4,11 @@
 
 /* ...code here */
 
-export const makePromise = (value) = new Promise(resolve => {
-    resolve(value);
-});
+// export const makePromise = (value) = new Promise(resolve => {
+//     resolve(value);
+// });
 
-// const makePromise = Promise.resolve(17);
+export const makePromise = value = Promise.resolve(value);
 
 /*
  * пример использования
