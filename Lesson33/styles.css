@@ -11,38 +11,33 @@
     flex-direction: column;
     margin: auto;
     align-items: center;
-}
-
-.user__info {
-    text-align: center;
-    font-size: 24px;
-    margin: 32px;
-}
-
-.user__avatar {
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-}
-
-.user__name {
-    font-weight: 700;
-}
-
-.user__location {
-    opacity: 0.5;
+    &__info {
+        text-align: center;
+        font-size: 24px;
+        margin: 32px;
+    }
+    &__avatar {
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+    }
+    &__name {
+        font-weight: 700;
+    }
+    &__location {
+        opacity: 0.5;
+    }
 }
 
 .name-form {
     margin: 32px auto;
-}
-
-.name-form__input {
-    height: 32px;
-    border: 3px solid #ccc;
-    border-radius: 8px;
-    flex: 1;
-    outline: none;
+    &__input {
+        height: 32px;
+        border: 3px solid #ccc;
+        border-radius: 8px;
+        flex: 1;
+        outline: none;
+    }
 }
 
 .btn {
