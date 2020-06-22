@@ -15,4 +15,4 @@ export const getTaskById = (taskId) => fetch(`${baseUrl}/${taskId}`)
     .then(taskId => taskId.json());
 
 // getTaskById(2)
-//     .then(task => console.log(task));
+//     .then(taskData => console.log(taskData));
