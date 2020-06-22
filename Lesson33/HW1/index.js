@@ -8,7 +8,7 @@ export const getTasksList = () => fetch(baseUrl)
 //     .then(tasksList => console.log(tasksList));
 
 /* getTaskById code here */
-const getTaskById = (taskId) => fetch(`${baseUrl}/${taskId}`)
+export const getTaskById = (taskId) => fetch(`${baseUrl}/${taskId}`)
     .then(response => response.json());
 
 // getTaskById(2)
