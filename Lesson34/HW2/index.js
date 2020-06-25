@@ -12,6 +12,7 @@ const validData = () => {
 
 const sendDataForm = event => {
     event.preventDefault();
+
     const formData = [...new FormData(formLogin)]
         .reduce((acc, [field, value]) => ({...acc, [field]: value }), {});
 
@@ -29,5 +30,6 @@ const sendDataForm = event => {
             submitButton.disabled = true;
             alert(JSON.stringify(userData));
         })
-        .catch(() => errorText.textContent = 'Failed to create user')
+
+    .catch(() => errorText.textContent = 'Failed to create user')
 }
