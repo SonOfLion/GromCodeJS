@@ -38,17 +38,17 @@ export const createUser = (usersObject) => {
 
 /* updateUser code here */
 export const updateUser = (userId, updateUser) => {
-    return fetch(`${baseUrl}/${userId}`), {
+    return fetch(`${baseUrl}/${userId}`, {
         method: 'PUT',
         headers: {
             'Content-type': 'application/json',
         },
         body: JSON.stringify(updateUser)
-    }
+    })
 };
 /* deleteUser code here */
 export const deleteUser = (userId) => {
-    return fetch(`${baseUrl}/${userId}`), {
+    return fetch(`${baseUrl}/${userId}`, {
         method: 'DELETE',
-    }
+    })
 };
