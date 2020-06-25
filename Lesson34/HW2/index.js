@@ -13,7 +13,7 @@ const validData = () => {
 const sendDataForm = event => {
     event.preventDefault();
 
-    const formData = [...new FormData(formLogin)]
+    const dataOfUsers = [...new FormData(formLogin)]
         .reduce((acc, [field, value]) => ({...acc, [field]: value }), {});
 
     fetch(baseUrl, {
@@ -21,12 +21,12 @@ const sendDataForm = event => {
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(dataOfUsers),
     })
 
     .then(response => response.json())
         .then(userData => {
-            inputs.map(elem => elem.value = '');
+            formInput.map(elem => elem.value = '');
             submitButton.disabled = true;
             alert(JSON.stringify(userData));
         })
