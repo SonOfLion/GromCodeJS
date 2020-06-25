@@ -11,7 +11,7 @@ const validData = () => {
     errorText.textContent = '';
 };
 
-const sendDataForm = event => {
+const sendDataForm = (event) => {
     event.preventDefault();
 
     const dataOfUsers = [...new FormData(formLogin)]
