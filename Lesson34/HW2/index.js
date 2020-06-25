@@ -4,10 +4,11 @@ const formInput = [...document.querySelectorAll('.form-input')];
 const errorText = document.querySelector('.error-text');
 const submitButton = document.querySelector('.submit-button');
 const formLogin = document.querySelector('.login-form');
-errorText.textContent = '';
+
 
 const validData = () => {
     formLogin.reportValidity() ? submitButton.disable = false : submitButton.disable = true;
+    errorText.textContent = '';
 };
 
 const sendDataForm = event => {
@@ -32,4 +33,4 @@ const sendDataForm = event => {
         })
 
     .catch(() => errorText.textContent = 'Failed to create user')
-}
+};
