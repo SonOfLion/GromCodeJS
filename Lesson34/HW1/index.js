@@ -21,7 +21,7 @@ export const createUser = (usersObject) => {
     return fetch(baseUrl, {
         method: 'POST',
         headers: {
-            'Content-type': 'application/json;charset=utf-8'
+            'Content-type': 'application/json'
         },
         body: JSON.stringify(usersObject)
     });
@@ -41,7 +41,7 @@ export const updateUser = (userId, updateUser) => {
     return fetch(`${baseUrl}/${userId}`), {
         method: 'PUT',
         headers: {
-            'Content-type': 'application/json;charset=utf-8'
+            'Content-type': 'application/json'
         },
         body: JSON.stringify(updateUser)
     }
