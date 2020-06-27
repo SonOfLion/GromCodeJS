@@ -4,7 +4,7 @@ export const parseUser = (jsonStr) => {
     } catch (error) {
         return null;
     }
-}
+};
 
 //export ++
 //name parseUser ++
