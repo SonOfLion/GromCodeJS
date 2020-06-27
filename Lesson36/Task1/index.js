@@ -6,7 +6,7 @@ export const fetchUser = async userId => {
         }
         const userData = await response.jason();
         return userData;
-    } catch (error) {
+    } catch (err) {
         throw new Error('Failed to fetch user');
     }
 };
