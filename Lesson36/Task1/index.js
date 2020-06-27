@@ -1,10 +1,10 @@
-export const fetchUser = async userId => {
+export const fetchUser = async USERID => {
     try {
-        const response = await fetch(`https://api.github.com/users/${userId}`);
+        const response = await fetch(`https://api.github.com/users/${USERID}`);
         if (!response.ok) {
             return null;
         }
-        const userData = await response.jason();
+        const userData = await response.json();
         return userData;
     } catch (err) {
         throw new Error('Failed to fetch user');
