@@ -1,13 +1,14 @@
 export const parseUser = (jSonStr) => {
     try {
-        return JSON.parse(jSonStr)
+        const test = JSON.parse(jSonStr)
+        return test;
     } catch (error) {
         return null;
     }
 };
 //export ++
 //name parseUser ++
-//return value of JSON.str if request positive return value of JSON.str++
+//return value of JSON.str if request positive++
 //return null if request is negative++
 
 // const user = {
