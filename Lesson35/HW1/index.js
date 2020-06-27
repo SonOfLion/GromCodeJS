@@ -1,10 +1,15 @@
-export const parseUser = (jSon) => {
+const parseUser = (jSonStr) => {
     try {
-        return JSON.parse(jSon);
+        return JSON.parse(jSonStr);
     } catch (err) {
-        console.error('Error');
         return null;
     }
 };
 
-// console.log(parseUser('abc'));
+// const user = {
+//     name: 'Leonid',
+//     age: 29,
+//     city: 'Odessa'
+// };
+
+// console.log(parseUser(user));
