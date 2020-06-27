@@ -1,4 +1,4 @@
-export const fetchUserdata = userName => {
+export const fetchUserData = userName => {
     return fetch(`https://api.github.com/users/${userName}`)
         .then(response => {
             if (response.ok) {

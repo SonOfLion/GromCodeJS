@@ -1,4 +1,4 @@
-import { fetchUserData, fetchRepositories } from './gateWays.js';
+import { fetchUserData, fetchRespositories } from './gateWays.js';
 import { renderUserData } from './user.js';
 import { renderRepos, cleanReposList } from './repos.js';
 import { showSpinner, hideSpinner } from './spinner.js';
@@ -17,13 +17,13 @@ export const reposList = document.querySelector('.repo-list');
 const onSearchUser = () => {
     showSpinner();
     cleanReposList();
-    const userName = userNameInputElem.nodeValue;
-    fetchUserData(name)
+    const userName = userNameInputElem.value;
+    fetchUserData(userName)
         .then(userData => {
             renderUserData(userData);
             return userData.repos_url;
         })
-        .then(url => fetchRepositories(url))
+        .then(url => fetchRespositories(url))
         .then(reposList => {
             renderRepos(reposList);
         })

@@ -1,7 +1,7 @@
-export const reposList = document.querySelector('.repo - list');
+export const reposList = document.querySelector('.repo-list');
 
 export const cleanReposList = () => {
-    listElem.innerHTML = '';
+    reposList.innerHTML = '';
 };
 
 export const renderRepos = reposList => {
