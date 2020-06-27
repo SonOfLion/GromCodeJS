@@ -1,6 +1,6 @@
 export const parseUser = (jSonStr) => {
     try {
-        return JSON.parse(jSonStr);
+        return JSON.parse(jSonStr)
     } catch (error) {
         return null;
     }
