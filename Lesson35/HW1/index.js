@@ -1,12 +1,10 @@
-const parseUser = (jsonStr) => {
+export const parseUser = (jsonStr) => {
     try {
         return JSON.parse(jsonStr)
     } catch (error) {
         return null;
     }
-};
-
-export { parseUser };
+}
 
 //export ++
 //name parseUser ++
