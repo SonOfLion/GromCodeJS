@@ -5,6 +5,10 @@ export const parseUser = (jSonStr) => {
         return null;
     }
 };
+//export ++
+//name parseUser ++
+//return value of JSON.str if request positive return value of JSON.str++
+//return null if request is negative++
 
 // const user = {
 //     name: 'Leonid',
