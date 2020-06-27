@@ -21,10 +21,12 @@ const onSearchUser = () => {
     fetchUserData(userName)
         .then(userData => {
             renderUserData(userData);
+            console.log(userData.repos_url);
             return userData.repos_url;
         })
         .then(url => fetchRespositories(url))
         .then(reposList => {
+            console.log(reposList);
             renderRepos(reposList);
         })
         .catch(err => {
