@@ -1,4 +1,4 @@
-Unexpected vat, use let or const istead.
+Unexpected var, use let or const istead.
 Expected '===' and instead saw '=='.
 'c' is not defined.
 Unary operator '++' used.
