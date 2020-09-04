@@ -8,7 +8,7 @@
 //6. final solution 
 
 
-export const vehicle = {
+const vehicle = {
     move() {
         console.log(`${this.name} is moving`);
     },
@@ -33,11 +33,16 @@ export const ship = {
     __proto__: vehicle
 };
 
-//vihicle.move();
+// vehicle.move();
 
-console.log(vehicle);
-ship.move;
-console.log(ship);
-console.log(ship.stopMachine());
+// console.log(vehicle.toString);
+// console.log(vehicle);
+
+// console.log(vehicle);
+// ship.move();
+// console.log(ship);
+// console.log(Object.keys(ship));
+console.log(Object.keys(vehicle));
+// console.log(ship.stopMachine());
 
 // [Prototype]-- getter and sette;

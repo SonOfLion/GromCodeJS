@@ -28,6 +28,7 @@ export class Ship extends Vehicle {
     }
 };
 
+console.log(Vehicle.hasOwnProperty('move'));
 // const ship1 = new Ship('Aurora', 18);
 
 // ship1.startMachine();

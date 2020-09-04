@@ -24,6 +24,7 @@ export class User {
     }
 }
 
-const user1 = new User('Leonid Pistryi');
+// const user1 = new User('Leonid Pistryi', 30);
+User.hasOwnProperty(sayHi());
 
-console.log(user1);
+// console.log(user1);
