@@ -1,4 +1,4 @@
-Unexpected var, use let or const instead
+not using var
 Expected '===' and instead saw '=='
 'c' is not defined
 Unary operator '++' used
