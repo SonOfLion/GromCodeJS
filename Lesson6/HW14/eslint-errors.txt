@@ -1,4 +1,4 @@
-not-use-var
+Запрещено использовать var
 Expected '===' and instead saw '=='
 'c' is not defined
 Unary operator '++' used
