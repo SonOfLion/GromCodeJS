@@ -1,6 +1,6 @@
 no-var
-Expected '===' and instead saw '=='
-'c' is not defined
-Unary operator '++' used
-Return statement should not contain assignment
-'d' is not defined
+eqeqeq
+no-undef
+no-plusplus
+no-return-assign
+no-undef
