@@ -1,4 +1,4 @@
-not-using-var
+not-use-var
 Expected '===' and instead saw '=='
 'c' is not defined
 Unary operator '++' used
