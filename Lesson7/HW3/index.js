@@ -1,12 +1,11 @@
-function increaseEvenEl(num, delta) {
-    if (!Array.isArray(num)) return null;
+const withdraw = (clients, balances, client, amount) => {
 
-    return num.map(num => {
-        if (num % 2 === 0)
-            return num = num + delta;
-        return num;
-    });
-}
+    
 
-let numbers = (([2, 5, 6, 8, 11, 9, 4], 20));
-console.log(increaseEvenEl(numbers));
+
+
+
+};
+
+withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'John', 50)
+console.log(withdraw());
